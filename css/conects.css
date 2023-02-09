@@ -258,8 +258,8 @@
 
 #today {
   width: 100%;
-  height: 550px;
-  background-color: whitesmoke;
+  height: 600px;
+  background: linear-gradient(to bottom, #E4E4F4, #fff);
 }
 #today > .today_box {
   width: 1130px;
@@ -268,31 +268,52 @@
   padding-top: 40px;
   margin-bottom: 40px;
 }
+#today > .today_box > .today_t {
+  line-height: 34px;
+}
+#today > .today_box > .today_t > h2 {
+  margin-right: 15px;
+}
 #today > .today_box > ul {
   width: 100%;
   height: 360px;
-  background-color: red;
   justify-content: space-around;
   margin-top: 30px;
 }
 #today > .today_box > ul > li {
   width: 260px;
   height: 100%;
-  background-color: gold;
+  text-align: center;
 }
 #today > .today_box > ul > li > a {
-  width: 200px;
-  height: 220px;
-  background-color: red;
+  width: 260px;
+  height: 300px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#today > .today_box > ul > li > a > img {
+  width: 160px;
+  height: 220px;
+  margin-top: 43px;
+}
+#today > .today_box > ul > li > p {
+  width: 200px;
+  margin: 20px 0;
+  font-size: 13px;
+  padding-left: 30px;
+}
+#today > .today_box > ul > li > h6 {
+  margin: 10px 0;
+  color: gray;
 }
 
 #book {
   width: 100%;
   height: 550px;
-  background-color: rgb(90, 90, 90);
+  background: linear-gradient(180deg, #CCE0FB 0%, #F5F5F5 100%);
 }
 #book > .book_box {
   width: 1130px;
@@ -304,22 +325,33 @@
 #book > .book_box > ul {
   width: 100%;
   height: 360px;
-  background-color: red;
   justify-content: space-around;
   margin-top: 30px;
 }
 #book > .book_box > ul > li {
   width: 260px;
   height: 100%;
-  background-color: gold;
+  text-align: center;
 }
 #book > .book_box > ul > li > a {
   width: 200px;
   height: 220px;
-  background-color: red;
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+}
+#book > .book_box > ul > li > a > img {
+  width: 100%;
+  height: 100%;
+}
+#book > .book_box > ul > li > p {
+  width: 200px;
+  margin: 20px 0;
+  font-size: 13px;
+  padding-left: 30px;
+}
+#book > .book_box > ul > li > h6 {
+  margin: 10px 0;
+  color: gray;
 }
 
 .book_t::before {
@@ -332,7 +364,84 @@
   line-height: 25px;
   text-align: center;
   border-radius: 30px;
-  margin: 5px;
+  margin: 5px 10px 5px 5px;
+}
+
+#book_kind {
+  width: 1130px;
+  height: 1066px;
+  margin: 0 auto;
+}
+#book_kind > h2 {
+  margin: 30px 0;
+  font-family: "LINESeedKR-Bd";
+}
+#book_kind .book_list > ul {
+  width: 1130px;
+  height: 65px;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgrey;
+}
+#book_kind .book_list > ul > li {
+  width: 12%;
+  height: 30px;
+  float: left;
+  border: 1px solid lightgray;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 10px 13.9px;
+  border-bottom: 1px solid lightgrey;
+}
+#book_kind .book_list > ul li.action {
+  background: #222;
+  color: #eee;
+}
+#book_kind .book_list li:first-of-type {
+  margin-left: 0;
+}
+#book_kind .book_list li:last-of-type {
+  margin-right: 0;
+}
+#book_kind .book_list li:hover {
+  cursor: pointer;
+}
+#book_kind .books {
+  margin-top: 10px;
+  position: relative;
+}
+#book_kind .books > div {
+  width: 100%;
+  height: 830px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 8px;
+}
+#book_kind .books > div > div {
+  width: 255px;
+  height: 450px;
+  margin: 10px 0;
+  text-align: center;
+}
+#book_kind .books > div > div h3 {
+  font-size: 17px;
+  width: 222px;
+  padding: 9px 0;
+  margin: 0 auto;
+  text-align: left;
+}
+#book_kind .books > div > div h6 {
+  width: 222px;
+  padding: 9px 0;
+  margin: 0 auto;
+  text-align: left;
+}
+#book_kind .books > div img {
+  width: 220px;
+  height: 302px;
+  border: 1px solid lightgray;
 }
 
 #main_b {
@@ -413,17 +522,30 @@
 #main_b .m_text > ul > li > img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
 }
-#main_b .m_text > .rev {
+#main_b .m_text .review {
   width: 830px;
   height: 180px;
+  overflow: hidden;
+}
+#main_b .m_text .review > .rev {
+  width: 5845px;
+  height: 100%;
   margin-top: 0;
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid lightgrey;
 }
+#main_b .m_text .review > .rev > li {
+  width: 100%;
+  height: auto;
+}
+#main_b .m_text .review > .rev > li img {
+  width: 72px;
+  height: 72px;
+}
 
 #text {
   width: 1130px;
-  height: 520px;
+  height: 530px;
   margin: 0 auto;
 }
 #text > img {
@@ -433,9 +555,9 @@
 #kind,
 #new {
   width: 1130px;
-  height: 430px;
-  background-color: red;
+  height: 450px;
   margin: 0 auto;
+  padding-top: 44px;
 }
 #kind h2,
 #new h2 {
@@ -446,12 +568,34 @@
   line-height: 45px;
   border-bottom: 1px solid lightgrey;
 }
+#kind > ul,
+#new > ul {
+  margin-top: 20px;
+}
 #kind > ul > li,
 #new > ul > li {
   width: 160px;
   height: 305px;
-  background-color: gold;
   margin: 5px;
+}
+#kind > ul > li > a,
+#new > ul > li > a {
+  width: 138px;
+  height: 198px;
+}
+#kind > ul > li > a > img,
+#new > ul > li > a > img {
+  width: 100%;
+  height: 198px;
+  border: 1px solid gray;
+}
+#kind > ul > li > h3,
+#new > ul > li > h3 {
+  margin: 10px 0;
+}
+#kind > ul > li > h6,
+#new > ul > li > h6 {
+  color: gray;
 }
 
 .sb {
