@@ -107,8 +107,8 @@ for (i = 0; i < search.length; i++) {
 
 
 
-
-                $('.box' + i).eq(j).append("<img src='" + msg.documents[j].thumbnail + "'/>");
+               
+                $('.box' + i).eq(j).append("<a href=#>"+"<img src='" + msg.documents[j].thumbnail + "'/>"+"</a>");
                 $('.box' + i).eq(j).append("<h6>" + msg.documents[j].publisher + "</h6>");
 
                 let tit = msg.documents[j].publisher;
@@ -231,3 +231,26 @@ $.ajax({
     });
 
 
+// key_menu
+
+$(function(){
+    $('.prev_').on('click',function(){
+        $('.key_ul li:last').prependTo('.key_ul');
+        $('.key_ul').css('margin-left',-1130);
+        $('.key_ul').stop().animate({marginLeft:0},1000);
+      
+
+    });
+
+    $('.next_').on('click',function(){
+        $('.key_ul').stop().animate({marginLeft:'-1130px'},1000,function(){
+            $('.key_ul li:first').appendTo('.key_ul');
+        $('.key_ul').css('margin-left','0');
+        });
+      
+    });
+});
+
+// $(function(){
+ 
+// });
