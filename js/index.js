@@ -1,3 +1,13 @@
+// slider
+
+// $(function(){
+//     $('.hidden>ul>li').on('hover',function(){
+//         let li=$('header_1>ul>li').index();
+//         if(li===)
+//     })
+// });
+
+
 // today
 
 
@@ -236,14 +246,14 @@ $.ajax({
 $(function(){
     $('.prev_').on('click',function(){
         $('.key_ul li:last').prependTo('.key_ul');
-        $('.key_ul').css('margin-left',-1130);
-        $('.key_ul').stop().animate({marginLeft:0},1000);
+        $('.key_ul').css('margin-left',-1903);
+        $('.key_ul').stop().animate({marginLeft:0},1500);
       
 
     });
 
     $('.next_').on('click',function(){
-        $('.key_ul').stop().animate({marginLeft:'-1130px'},1000,function(){
+        $('.key_ul').stop().animate({marginLeft:'-1903px'},1500,function(){
             $('.key_ul li:first').appendTo('.key_ul');
         $('.key_ul').css('margin-left','0');
         });
