@@ -497,22 +497,22 @@
 #writers .wr_t > p {
   margin-bottom: 30px;
 }
-#writers > ul {
+#writers ul {
   width: 1200%;
 }
-#writers > ul > li {
+#writers ul > li {
   width: 120px;
   height: 174px;
   margin-right: 60px;
 }
-#writers > ul > li > a > img {
+#writers ul > li > a > img {
   border-radius: 50%;
 }
-#writers > ul > li > a > h4 {
+#writers ul > li > a > h4 {
   text-align: center;
   font-family: "LINESeedKR-Bd";
 }
-#writers > ul > li > a > h6 {
+#writers ul > li > a > h6 {
   text-align: center;
   font-family: "LINESeedKR";
   font-weight: normal;
