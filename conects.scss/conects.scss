@@ -128,12 +128,14 @@ $fontColor: #222222;
         width: 1130px;
         height: 450px;
         overflow: hidden;
+
         >ul {
 
             width: 3040px;
             height: 50px;
             justify-content: space-around;
-        >ul li:nth-of-type(2) {
+
+            >ul li:nth-of-type(2) {
                 width: 180px;
             }
 
@@ -141,8 +143,8 @@ $fontColor: #222222;
                 width: 180px;
                 height: 50px;
                 font-size: 11px;
-          
-            
+
+
                 a {
                     width: 100%;
                     height: 100%;
@@ -163,8 +165,9 @@ $fontColor: #222222;
                     }
                 }
             }
-            li:hover{
-              font-weight: 900;
+
+            li:hover {
+                font-weight: 900;
             }
         }
     }
@@ -187,10 +190,11 @@ $fontColor: #222222;
                 >li {
                     position: relative;
                     font-size: 16px;
-                    line-height: 50px;
+
                     left: 1px;
                     background-color: rgba(34, 34, 34, 0.4);
                     width: 165px;
+
 
                     &:hover {
                         background-color: rgba(34, 34, 34, 0.5);
@@ -199,12 +203,65 @@ $fontColor: #222222;
                     >a {
                         width: 100%;
                         height: 100%;
+                        line-height: 50px;
                         display: block;
                         font-family: "LINESeedKR-Bd";
                         color: #eee;
                         padding-left: 35px;
 
                     }
+                }
+
+                >li:nth-of-type(1) {
+                    width: 130px;
+                    height: 100%;
+                    line-height: 50px;
+                    display: block;
+                    font-family: "LINESeedKR-Bd";
+                    color: #eee;
+                    padding-left: 35px;
+                    cursor: pointer;
+
+                            >strong:nth-of-type(1):after {
+                            content: "";
+                            width: 30px;
+                            height: 0.5px;
+                            border: 1px solid transparent;
+                            position: absolute;
+                            z-index: 5;
+                            background-color: #eee;
+                            right: 10px;
+                            top: 15px;
+
+                        }
+
+                        >strong:nth-of-type(2)::after {
+                            content: "";
+                            width: 30px;
+                            height: 0.5px;
+                            border: 1px solid transparent;
+                            position: absolute;
+                            z-index: 5;
+                            background-color: #eee;
+                            right: 10px;
+                            top: 25px;
+
+                        }
+
+                        >strong:nth-of-type(3)::after {
+                            content: "";
+                            width: 30px;
+                            height: 0.5px;
+                            border: 1px solid transparent;
+                            position: absolute;
+                            z-index: 5;
+                            background-color: #eee;
+                            right: 10px;
+                            top: 35px;
+
+                        }
+                    
+
                 }
             }
         }
@@ -224,20 +281,23 @@ $fontColor: #222222;
         border-radius: 50%;
         border: 1px solid #eee;
         font-size: 30px;
-        line-height:30px;
+        line-height: 30px;
         text-align: center;
         color: #eee;
         margin: 0 10px 0 0;
-       
+
     }
-    span.prev{
+
+    span.prev {
         letter-spacing: 8px;
 
     }
-    span.next{
+
+    span.next {
         letter-spacing: -8px;
     }
-    span:hover{
+
+    span:hover {
         border: 1px solid transparent;
         background-color: lightblue;
         color: #eee;
@@ -249,8 +309,117 @@ $fontColor: #222222;
 #slider {
     width: 100%;
     height: 350px;
-
     position: relative;
+
+    >.all_box {
+        width: 880px;
+        height: 470px;
+        position: absolute;
+        background-color: #eee;
+        border: 1px solid #72727263;
+        z-index: 120;
+        left: 388px;
+        top: 0;
+        display: none;
+
+        >.all {
+            width: 900px;
+            height: 450px;
+            position: absolute;
+            z-index: 120;
+            flex-wrap: wrap;
+            padding: 20px;
+      
+          
+            align-items: center;
+            left: 0px;
+            top: 0;
+
+
+            >p {
+                width: 155px;
+                height: 50px;
+                border: 1px solid #72727263;
+                line-height: 50px;
+                text-align: center;
+                margin: 5px;
+
+                >a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            >p:nth-of-type(1) {
+                width: 26px;
+                height: 26px;
+                border: 1px solid #222222;
+                background-color: #222222;
+                color: #eee;
+                position: absolute;
+                top: -6px;
+                right: 55px;
+                line-height: 26px;
+                cursor: pointer;
+            }
+
+            >p:hover a{
+                background-color: #222222;
+                color: #eee;
+            }
+        }
+    }
+
+    .slider_img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+
+
+        >ul {
+            width: 320%;
+            height: 350px;
+            align-items: center;
+            position: absolute;
+            background-color: #5a5a5a;
+            display: none;
+
+            >li {
+                width: 500px;
+                height: 280px;
+
+                background-color: #eee;
+                margin: 0 30px;
+                justify-content: space-between;
+
+                >h6 {
+                    width: 300px;
+
+                    padding: 33px 0 0 32px;
+
+                    >strong {
+                        display: block;
+                        font-size: 25px;
+                        width: 268px;
+                    }
+                }
+
+                >img {
+                    width: 165px;
+                    height: 230px;
+                    margin: 20px 20px 0 0;
+                    box-shadow: 1px 1px 10px #797878;
+                }
+
+            }
+        }
+    }
+
+    .hover {
+        display: block;
+    }
 
     >.slider_box {
         width: 100%;
@@ -614,7 +783,7 @@ $fontColor: #222222;
 
 #writers {
     width: 100%;
-    height: 300px;
+    height: 350px;
 
     .wr_t {
         width: 1130px;
@@ -631,7 +800,22 @@ $fontColor: #222222;
     }
 
     ul {
-        width: 1200%;
+        width: 150%;
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        padding: 36px 0;
+        animation: marquee 15s linear infinite;
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
         >li {
             width: 120px;
@@ -645,7 +829,7 @@ $fontColor: #222222;
 
                 >h4 {
                     text-align: center;
-                    font-family:"LINESeedKR-Bd"
+                    font-family: "LINESeedKR-Bd"
                 }
 
                 >h6 {
@@ -807,6 +991,7 @@ $fontColor: #222222;
     height: 62px;
     position: relative;
     padding: 35px 0;
+    overflow: hidden;
 
     >span:hover {
         background-color: rgba(255, 255, 255, 0.4);
@@ -857,6 +1042,7 @@ $fontColor: #222222;
         >ul.key_ul {
             width: 300%;
             height: 60px;
+
 
             >li.l1 {
                 background: rgb(192, 232, 255);
