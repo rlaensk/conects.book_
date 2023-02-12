@@ -6,6 +6,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "LINESeedKR-Bd";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2") format("woff2");
   font-weight: 700;
@@ -17,7 +23,7 @@
   list-style: none;
   text-decoration: none;
   color: #222222;
-  font-family: "LINESeedKR";
+  font-family: "SUIT-Regular";
 }
 
 .header_1 {
@@ -40,8 +46,7 @@
   height: 20px;
   text-align: center;
   font-size: 8px;
-  border-right: 1px solid #222;
-  font-family: "LINESeedKR";
+  font-family: "SUIT-Regular";
   font-weight: bold;
   align-self: end;
   position: relative;
