@@ -13,8 +13,8 @@
 // slider
 
 let search2;
-search2 = ['수험서', '참고서', '외국어', '대학교재', '에세이', '자기계발', '종교']
-for(let i = 0; i < search2.length; i++) {
+search2 = ['수험서', '참고서', '영어', '대학교재', '에세이', '자기계발', '종교']
+for (let i = 0; i < search2.length; i++) {
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -26,7 +26,7 @@ for(let i = 0; i < search2.length; i++) {
 
 
             // for문 (8개)
-            var sli = document.getElementsByClassName('sim'+i);
+            var sli = document.getElementsByClassName('sim' + i);
 
 
             for (var j = 0; j < sli.length; j++) {
@@ -48,29 +48,61 @@ for(let i = 0; i < search2.length; i++) {
 
 };
 
-$('.all1').on('click',function(){
-    $('.all_box').css("display","block");
+$('.all1').on('click', function () {
+    $('.all').css({opacity: 1},{zIndex:150});
 });
 
-$('.close').click(function(){
-    $('.all_box').css("display","none");
+$('.close').click(function () {
+    $('.all').css({opacity: 0},{zIndex:-100});
 });
 
 
-    let li2=$('.list2>li').index();
-    for (i = 0; i < li2.length; i++) {
-        $('.list2>li').hover(function () {
-            let j= $('this').index();
-                $('.slider_img>ul[j+1]').css("display","block");
-       
-
-        },function(){
-            
-            $('.slider_img>ul[j+1]').css("display","none");
+// hidden_menu
+$('.hidden>ul>li').hover(function () {
+    let i = $(this).index();
+    $('.slider_box> div').eq(i).css('opacity','0');
+    $('.slider_box> div').eq(i).css('opacity','1');
+  
+},function(){
+    $('.slider_box> div').css('opacity','0');
+});
     
-        });
+$(function(){
+    $('.btn>.prev').click(function(){
+        $('.header_m>li:last').prependTo('.header_m');
+        $('.header_m').css('margin-left',-190);
+        $('.header_m').stop().animate({marginLeft:0},800);
+    });
+    $('.btn>.next').click(function(){
+        $('.header_m').stop().animate({marginLeft:-180},800,function(){
+        $('.header_m>li:first').appendTo('.header_m');
+        $('.header_m').css('margin-left',0);
+    });
+    });
+});
 
-    }
+
+
+
+
+
+// all_box
+
+     $('.list2>li').hover(function () {
+        let i = $(this).index();
+   
+        $('.slider_img>ul').eq(i).css("opacity",'0');
+        $('.slider_img>ul').eq(i).css("opacity",'1');
+    
+       
+    },function(){
+        $('.slider_img>ul').css("opacity",'0');
+    });
+
+
+
+
+
 
 // today
 
