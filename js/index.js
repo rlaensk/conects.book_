@@ -58,13 +58,14 @@ $('.close').click(function () {
 
 
 // hidden_menu
-$('.hidden>ul>li').hover(function () {
+$('.header_m>li').on('hover',function () {
     let i = $(this).index();
-    $('.slider_box> div').eq(i).css('opacity','0');
-    $('.slider_box> div').eq(i).css('opacity','1');
+
+    $('.slider_box>div').eq(i).css('opacity','0');
+    $('.slider_box>div').eq(i).css('opacity','1');
   
 },function(){
-    $('.slider_box> div').css('opacity','0');
+    $('.slider_box>div').css('opacity','0');
 });
     
 $(function(){

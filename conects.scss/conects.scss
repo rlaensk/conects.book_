@@ -6,12 +6,14 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'SUIT-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'LINESeedKR-Bd';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
@@ -24,18 +26,27 @@ $fontColor: #222222;
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
+
     text-decoration: none;
     color: $fontColor;
     font-family: 'SUIT-Regular';
 
 }
 
+ul,
+li {
+    list-style: none;
+}
+
+#wrap {
+    overflow: hidden;
+}
+
 .header_1 {
     width: 100%;
     height: 90px;
     line-height: 50px;
-    
+
     border-top: 5px solid #182c8d;
     position: relative;
 
@@ -52,7 +63,7 @@ $fontColor: #222222;
             height: 20px;
             text-align: center;
             font-size: 8px;
-          
+
             font-family: 'SUIT-Regular';
             font-weight: bold;
             align-self: end;
@@ -119,7 +130,8 @@ $fontColor: #222222;
         border: 2px solid #222222;
         border-radius: 10px;
         margin-left: 50px;
-        .seach{
+
+        .seach {
             border: none;
             background-color: transparent;
             margin-left: 10px;
@@ -130,10 +142,91 @@ $fontColor: #222222;
             bottom: 5px;
 
         }
-        .seach1{
+
+        .seach1 {
             padding-top: 5px;
         }
-        input:focus {outline:none;}
+
+        input:focus {
+            outline: none;
+        }
+
+    }
+
+    .seach_mimi {
+
+        table {
+            width: 629px;
+            height:443px;
+           background-color: #eee;
+            position: absolute;
+            right: 657px;
+            top: 149px;
+            z-index: 10;
+            border-radius: 12px;
+        }
+       
+        th {
+            width: 315.5px;
+            height: 40px;
+           background-color: #e2dada;
+          
+        }
+        .text1{
+            border-radius: 10px 0 0 10px;
+        }
+        .text2{
+            border-radius: 0 10px 10px 0;
+        }
+
+        .fi {
+            width: 300px;
+            height: 40px;
+            
+            >div:nth-of-type(1){
+                
+                width: 130px;
+                height: 16px;
+                font-size: 11px;
+                margin-left: 20px;
+                margin-right: 20px;
+                border-right: 1px solid #2e2e2eb0;
+            }
+            >div:nth-of-type(2){
+                width: 300px;
+                height: 16px;
+                font-size: 13px;
+              
+                >a{
+                    display: inline-block;
+                    width: 32px;
+                    margin-left: 10px;
+                    border: 1px solid transparent;
+                    text-align: center;
+                    background-color:#2e2e2eb0;
+                    color: #eee;
+                    border-radius: 5px;
+                    font-size: 10px;
+                }
+            }
+           
+        }
+        .bor{
+            border-right: 1px solid #999999;
+        }
+
+        .ol {
+            ol {
+                height: 100%;
+                margin-top: 15px;
+                li{
+                list-style: decimal;
+                height: 34px;
+                margin-left: 45px;
+
+                }
+            }
+        }
     }
 }
 
@@ -149,8 +242,9 @@ $fontColor: #222222;
         height: 450px;
         overflow: hidden;
 
-        >div.header_m_h{
-           overflow: hidden;
+        >div.header_m_h {
+            overflow: hidden;
+
             >ul {
 
                 width: 2938px;
@@ -836,13 +930,15 @@ $fontColor: #222222;
 }
 
 #writers {
-    width: 100%;
+    width: 1903px;
     height: 350px;
+
 
     .wr_t {
         width: 1130px;
         height: 117px;
         margin: 0 auto;
+
 
         >h2 {
             margin: 0 0 30px 0;
@@ -853,44 +949,51 @@ $fontColor: #222222;
         }
     }
 
-    ul {
-        width: 150%;
-        position: absolute;
-        white-space: nowrap;
-        will-change: transform;
-        padding: 36px 0;
-        animation: marquee 15s linear infinite;
+    .writers_h {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
 
-        @keyframes marquee {
-            0% {
-                transform: translateX(0)
-            }
+        ul {
+            width: 150%;
+            position: absolute;
+            white-space: nowrap;
+            will-change: transform;
+            padding: 36px 0;
+            animation: marquee 15s linear infinite;
 
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        >li {
-            width: 120px;
-            height: 174px;
-            margin-right: 60px;
-
-            >a {
-                >img {
-                    border-radius: 50%;
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0)
                 }
 
-                >h4 {
-                    text-align: center;
-                    font-family: "LINESeedKR-Bd"
+                100% {
+                    transform: translateX(-50%);
                 }
+            }
 
-                >h6 {
-                    text-align: center;
-                    font-family: "LINESeedKR";
-                    font-weight: normal;
+            >li {
+                width: 120px;
+                height: 174px;
+                margin-right: 60px;
 
+                >a {
+                    >img {
+                        border-radius: 50%;
+                    }
+
+                    >h4 {
+                        text-align: center;
+                        font-family: "LINESeedKR-Bd"
+                    }
+
+                    >h6 {
+                        text-align: center;
+                        font-family: "LINESeedKR";
+                        font-weight: normal;
+
+                    }
                 }
             }
         }
@@ -1595,4 +1698,4 @@ footer {
             height: 70px;
         }
     }
-}
+} 
