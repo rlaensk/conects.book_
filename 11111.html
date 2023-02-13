@@ -1,123 +1,105 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>API 연습</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <style>
+    <style>
+        * {
+            margin: 0;
+        }
 
+        ul,
+        li,
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-*{margin: 0;padding: 0; list-style: none; text-decoration: none; color: #222;}
-
-.header_list{width: 1130px; height: 80px; margin: 0 auto; overflow: hidden;;}
-.hidden{display: flex; width:250% ;}
-.hidden_menu>span{display: block; width: 130px; height: 80px;line-height: 80px;}
-
-.hidden>ul{display: flex;}
-
-
-  </style>
-
-
-  <div class="header_list flex_">
-    <div class="hidden">
-      <div class="hidden_menu">
-        <span class="all1">전체분야<strong></strong><strong></strong><strong></strong></span>
+        .a {
+            width: 600px;
+            height: 500px;
         
-        <!-- <ul class="list2">
-          -->
-          <!-- </li>
-          <li><a href="">수험서</a></li>
-          <li><a href="">참고서</a></li>
-          <li><a href="">외국어</a></li>
-          <li><a href="">대학교재</a></li>
-          <li><a href="">에세이</a></li>
-          <li><a href="">자기계발</a></li>
-          <li><a href="">종교</a></li>
-        </ul> -->
-      </div>
-      <ul class="header_m flex_">
-        <li>
+            border-radius: 50px;
+            margin: 0 auto;
+        }
+        .flex_{
+            display: flex;
+            width: 100%;
+        }
+        .a2{
+            width: 300px;
+            background-color: red;
+        }
 
-        </li>
-        <li><a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2023/0201/NYtGM.png
-                      " alt="">
-            <span>&lt;2023 문동균 한국사 Final 모의고사 2023&gt; 출간</span>
-          </a></li>
-        <li><a href="#"><img
-              src="	https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2023/0125/LFV5g.png" alt="">
-            <span>한국사능력검정시험 기본&심화 기획전!</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2023/0119/tdhNi.png" alt="">
-            <span>2023 공단기 모의고사 기획전</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2023/0119/tdhNi.png" alt="">
-            <span>공부서점 추천! 요약집/모의고사 모음</a></li></span>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/1223/tRrGP.png" alt="">
-            <span>최신 배치표로 보는 단기합격 비법</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2023/0113/AH5jy.jpg" alt="">
-            <span>2024 수능 준비도 공부서점에서!</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/1221/uZ1SZ.png" alt="">
-            <span>[공부서점 ONLY] 애드온 모의고사</span></a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/1215/Fpvtg.png" alt="">
-            <span>2023 이동기 영어 시리즈 이벤트</span>
+        .a>p {
+            border-radius: 30px 30px 0 0;
+        }
 
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2023/0113/FY10F.png" alt="">
-            <span>2023 선재국어 공부서점 기획전</span>
+        .a1 {
+            width: 300px;
+            height: 40px;
+            background-color: red;
+        }
+        .b0{
+            display: flex;
+        }
+        .b {
+            width: 300px;
+            height: 410px;
+            border-right: 1px solid gold;
+        }
 
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/1229/B6G7S.png" alt="">
-            <span>2023 공단기 7급 PSAT 기획전</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/1229/1cTvq.png" alt="">
-            <span>2023 이동기 영어 쿼터모의고사 출간</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/0223/YYDqi.png" alt="">
-            <span>나만의 컬러를 입다 New 포커스노트</span>
-          </a></li>
-        <li><a href="#"><img
-              src="	https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2021/0426/WsAa9.png" alt="">
-            <span>온라인1등 공부서점</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2021/1022/0wQ0P.png" alt="">
-            <span>공부필수템 최저가 애드온</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/0928/hUwke.png" alt="">
-            <span>공부서점 분철 서비스</span>
-          </a></li>
-        <li><a href="#"><img
-              src="	https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2021/0803/8gEvm.png" alt="">
-            <span>공부서점 혜택 가이드</span>
-          </a></li>
-        <li><a href="#"><img
-              src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/1209/OBQ4Q.png" alt="">
-            <span>멤버십 충전 추가 5%혜택</span>
-          </a></li>
-      </ul>
+        .c2 {
+            width: 100%;
+            height: 50px;
+            background: red;
+        }
+    </style>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="a">
+        <div class="flex_">
+            <p class="a1">최근검색어</p>
+            <p class="a2">인기급상승</p>
+        </div>
+
+        <div class="b0">
+            <div class="b">
+               
+            </div>
+            <div class="c">
+             <ol>
+                <li><a href="">2022 공단기 기본서 시리즈</a></li>
+                <li><a href="">EBS 수능특강</a></li>
+                <li><a href="">선재국어</a></li>
+                <li><a href="">에스티유니타스</a></li>
+                <li><a href="">기화펜</a></li>
+                <li><a href="">이동기</a></li>
+                <li><a href="">한국사능력시험</a></li>
+                <li><a href="">문동균</a></li>
+                <li><a href="">애드온</a></li>
+                <li><a href="">써니 행정법</a></li>
+             </ol>
+            </div>
+        </div>
+        <p class="c2"> </p>
 
     </div>
 
     <script>
 
     </script>
-    </body>
+</body>
 
 </html>

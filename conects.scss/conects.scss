@@ -135,7 +135,7 @@ li {
             border: none;
             background-color: transparent;
             margin-left: 10px;
-            font-size: 20px;
+            font-size: px;
             width: 564px;
             height: 38px;
             position: relative;
@@ -154,64 +154,81 @@ li {
     }
 
     .seach_mimi {
+        display: none;
+        z-index: 100;
 
         table {
-            width: 629px;
-            height:443px;
-           background-color: #eee;
+            width: 600px;
+            height: 443px;
+            background-color: #eee;
             position: absolute;
-            right: 657px;
-            top: 149px;
+            right: 670px;
+            top: 146px;
             z-index: 10;
             border-radius: 12px;
         }
-       
+
         th {
             width: 315.5px;
             height: 40px;
-           background-color: #e2dada;
-          
+            background-color: #e2dada;
+
         }
-        .text1{
+
+        .text1 {
             border-radius: 10px 0 0 10px;
         }
-        .text2{
+
+        .text2 {
             border-radius: 0 10px 10px 0;
         }
 
         .fi {
-            width: 300px;
-            height: 40px;
-            
-            >div:nth-of-type(1){
-                
+            width: 280px;
+            height: 30px;
+
+            >div:nth-of-type(1) {
+
                 width: 130px;
                 height: 16px;
                 font-size: 11px;
                 margin-left: 20px;
                 margin-right: 20px;
-                border-right: 1px solid #2e2e2eb0;
+                border-right: 1px solid lightgray;
             }
-            >div:nth-of-type(2){
+
+            >div:nth-of-type(2) {
                 width: 300px;
                 height: 16px;
                 font-size: 13px;
-              
-                >a{
+
+                >button {
                     display: inline-block;
                     width: 32px;
                     margin-left: 10px;
                     border: 1px solid transparent;
                     text-align: center;
-                    background-color:#2e2e2eb0;
+                    background-color: #2e2e2eb0;
                     color: #eee;
                     border-radius: 5px;
                     font-size: 10px;
+                    cursor: pointer;
                 }
             }
-           
+            >.tex_c{
+                p{
+                content: "기능을 끄려면 OFF 버튼을 클릭해 주세요.";
+                width: 247px;
+                display: block;
+                position: absolute;
+                left: 234px;
+                color: lightgray;
+                }
+            }
+
         }
-        .bor{
+
+        .bor {
             border-right: 1px solid #999999;
         }
 
@@ -219,10 +236,12 @@ li {
             ol {
                 height: 100%;
                 margin-top: 15px;
-                li{
-                list-style: decimal;
-                height: 34px;
-                margin-left: 45px;
+                font-size: 12px;
+
+                li {
+                    list-style: decimal;
+                    height: 34px;
+                    margin-left: 45px;
 
                 }
             }
@@ -279,15 +298,16 @@ li {
                             width: 110px;
                             height: 100%;
                             margin-left: 8px;
-                            margin-top: 10px
+                            margin-top: 22px;
                         }
                     }
                 }
 
-                .fi {
+                .fi_ {
                     >a {
-                        >span {
-                            width: 150px
+                        span {
+                            width: 130px;
+                            margin-top: 21px;
                         }
                     }
 
@@ -426,7 +446,7 @@ li {
             width: 840px;
             height: 450px;
             position: absolute;
-            z-index: 12;
+            z-index: 10;
             flex-wrap: wrap;
             padding: 20px;
 
@@ -481,7 +501,7 @@ li {
             width: 164px;
             height: 385px;
             position: relative;
-            z-index: 100;
+            z-index: 150;
 
             >li {
                 position: relative;
@@ -1449,38 +1469,80 @@ li {
                 }
             }
         }
+ .r_btn{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+            >p{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border:1px solid lightgray;
+                position: absolute;
+                top:65px;
+                text-align: center;
+                color: lightgray;
+                line-height: 25px;
+            }
+            >.prev_r{
+                left:-45px;
+            }
+            >.next_r{
+                right: 15px;
+            }
+ 
+ }  
+.r_btn p:hover{
+   background-color: lightgray;
+   color: #222;
+}
 
-        .review {
+.review {
             width: 830px;
-            height: 180px;
+            height: 116px;
             overflow: hidden;
+            margin: 30px 0;
+           
 
             >.rev {
-                width: 5845px;
-                height: 100%;
+                width: 6640px;
+                height: 100px;
 
                 margin-top: 0;
                 border-bottom: 1px solid lightgrey;
                 border-top: 1px solid lightgrey;
+                align-items: center;
 
                 >li {
                     width: 100%;
                     height: auto;
 
-                    img {
-                        width: 72px;
-                        height: 72px;
+
+                    >a {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                        span{
+                            width: 570px;
+                        }
                     }
                 }
             }
         }
     }
-}
 
+
+}
 
 #text {
     width: 1130px;
-    height: 530px;
+    height: 560px;
     margin: 0 auto;
 
     >img {
@@ -1496,7 +1558,7 @@ li {
     height: 450px;
 
     margin: 0 auto;
-    padding-top: 44px;
+    
 
     h2 {
         margin: 10px 0;
@@ -1523,7 +1585,7 @@ li {
                 >img {
                     width: 100%;
                     height: 198px;
-                    border: 1px solid gray;
+                    border: 1px solid lightgray;
                 }
             }
 
@@ -1543,7 +1605,7 @@ li {
 
 
     width: 1130px;
-    height: 100%;
+    height: 150px;
     margin: 0 auto;
 
 

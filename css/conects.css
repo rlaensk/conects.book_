@@ -111,7 +111,7 @@ li {
   border: none;
   background-color: transparent;
   margin-left: 10px;
-  font-size: 20px;
+  font-size: px;
   width: 564px;
   height: 38px;
   position: relative;
@@ -123,13 +123,17 @@ li {
 #header_box form input:focus {
   outline: none;
 }
+#header_box .seach_mimi {
+  display: none;
+  z-index: 100;
+}
 #header_box .seach_mimi table {
-  width: 629px;
+  width: 600px;
   height: 443px;
   background-color: #eee;
   position: absolute;
-  right: 657px;
-  top: 149px;
+  right: 670px;
+  top: 146px;
   z-index: 10;
   border-radius: 12px;
 }
@@ -145,8 +149,8 @@ li {
   border-radius: 0 10px 10px 0;
 }
 #header_box .seach_mimi .fi {
-  width: 300px;
-  height: 40px;
+  width: 280px;
+  height: 30px;
 }
 #header_box .seach_mimi .fi > div:nth-of-type(1) {
   width: 130px;
@@ -154,14 +158,14 @@ li {
   font-size: 11px;
   margin-left: 20px;
   margin-right: 20px;
-  border-right: 1px solid rgba(46, 46, 46, 0.6901960784);
+  border-right: 1px solid lightgray;
 }
 #header_box .seach_mimi .fi > div:nth-of-type(2) {
   width: 300px;
   height: 16px;
   font-size: 13px;
 }
-#header_box .seach_mimi .fi > div:nth-of-type(2) > a {
+#header_box .seach_mimi .fi > div:nth-of-type(2) > button {
   display: inline-block;
   width: 32px;
   margin-left: 10px;
@@ -171,6 +175,15 @@ li {
   color: #eee;
   border-radius: 5px;
   font-size: 10px;
+  cursor: pointer;
+}
+#header_box .seach_mimi .fi > .tex_c p {
+  content: "기능을 끄려면 OFF 버튼을 클릭해 주세요.";
+  width: 247px;
+  display: block;
+  position: absolute;
+  left: 234px;
+  color: lightgray;
 }
 #header_box .seach_mimi .bor {
   border-right: 1px solid #999999;
@@ -178,6 +191,7 @@ li {
 #header_box .seach_mimi .ol ol {
   height: 100%;
   margin-top: 15px;
+  font-size: 12px;
 }
 #header_box .seach_mimi .ol ol li {
   list-style: decimal;
@@ -228,10 +242,11 @@ li {
   width: 110px;
   height: 100%;
   margin-left: 8px;
-  margin-top: 10px;
+  margin-top: 22px;
 }
-.header_list .hidden > div.header_m_h > ul .fi > a > span {
-  width: 150px;
+.header_list .hidden > div.header_m_h > ul .fi_ > a span {
+  width: 130px;
+  margin-top: 21px;
 }
 .header_list .hidden > div.header_m_h > ul li:hover {
   font-weight: 900;
@@ -341,7 +356,7 @@ li {
   width: 840px;
   height: 450px;
   position: absolute;
-  z-index: 12;
+  z-index: 10;
   flex-wrap: wrap;
   padding: 20px;
   background-color: #ffffff;
@@ -388,7 +403,7 @@ li {
   width: 164px;
   height: 385px;
   position: relative;
-  z-index: 100;
+  z-index: 150;
 }
 #slider .all2 > .list2 > li {
   position: relative;
@@ -1159,30 +1174,67 @@ li {
 #main_b .m_text > ul > li > img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
 }
+#main_b .m_text .r_btn {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+#main_b .m_text .r_btn > p {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 65px;
+  text-align: center;
+  color: lightgray;
+  line-height: 25px;
+}
+#main_b .m_text .r_btn > .prev_r {
+  left: -45px;
+}
+#main_b .m_text .r_btn > .next_r {
+  right: 15px;
+}
+#main_b .m_text .r_btn p:hover {
+  background-color: lightgray;
+  color: #222;
+}
 #main_b .m_text .review {
   width: 830px;
-  height: 180px;
+  height: 116px;
   overflow: hidden;
+  margin: 30px 0;
 }
 #main_b .m_text .review > .rev {
-  width: 5845px;
-  height: 100%;
+  width: 6640px;
+  height: 100px;
   margin-top: 0;
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid lightgrey;
+  align-items: center;
 }
 #main_b .m_text .review > .rev > li {
   width: 100%;
   height: auto;
 }
-#main_b .m_text .review > .rev > li img {
-  width: 72px;
-  height: 72px;
+#main_b .m_text .review > .rev > li > a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#main_b .m_text .review > .rev > li > a img {
+  width: 60px;
+  height: 60px;
+}
+#main_b .m_text .review > .rev > li > a span {
+  width: 570px;
 }
 
 #text {
   width: 1130px;
-  height: 530px;
+  height: 560px;
   margin: 0 auto;
 }
 #text > img {
@@ -1194,7 +1246,6 @@ li {
   width: 1130px;
   height: 450px;
   margin: 0 auto;
-  padding-top: 44px;
 }
 #kind h2,
 #new h2 {
@@ -1224,7 +1275,7 @@ li {
 #new > ul > li > a > img {
   width: 100%;
   height: 198px;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
 }
 #kind > ul > li > h3,
 #new > ul > li > h3 {
@@ -1237,7 +1288,7 @@ li {
 
 .sb {
   width: 1130px;
-  height: 100%;
+  height: 150px;
   margin: 0 auto;
 }
 
