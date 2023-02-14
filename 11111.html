@@ -13,51 +13,100 @@
         }
 
         ul,
-        li,
-        {
+        li {
             list-style: none;
-            margin: 0;
-            padding: 0;
+
         }
 
         .a {
             width: 600px;
-            height: 500px;
-        
-            border-radius: 50px;
+            height:340px;
+
+            border-radius: 10px;
             margin: 0 auto;
+            overflow: hidden;
         }
-        .flex_{
+
+        .flex_ {
             display: flex;
             width: 100%;
         }
-        .a2{
+
+        .a>div>p {
             width: 300px;
-            background-color: red;
+            height: 30px;
+            background-color: #e9e9e9;
+            text-align: center;
+            line-height: 30px;
+            font-size: 12px;
         }
 
-        .a>p {
-            border-radius: 30px 30px 0 0;
-        }
 
-        .a1 {
-            width: 300px;
-            height: 40px;
-            background-color: red;
-        }
-        .b0{
+        .b0 {
             display: flex;
+            height: 280px;
         }
+
         .b {
             width: 300px;
-            height: 410px;
-            border-right: 1px solid gold;
+            height: 320px;
+            border-right: 1px solid #e9e9e9;
         }
 
-        .c2 {
+        .o_li {
+            width: 300px;
+            height:280px;
+
+        }
+
+        ol {
+            width: 90%;
+            height: 100%;
+            margin-top: 15px;
+
+        }
+
+        ol>li {
             width: 100%;
-            height: 50px;
-            background: red;
+            height: 26px;
+            list-style: decimal;
+            font-size: 12px;
+
+        }
+
+        .reu {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            background: #e9e9e9;
+            align-items: center;
+           justify-content:flex-start start;
+        }
+        .reu>button{
+            border: none;
+            width: 150px;
+            height: 15px;
+           
+            font-size: 10px;
+            background-color: transparent;
+            border-right: 1px solid #bbbbbb;
+        }
+        .reu p:nth-of-type(1){
+            font-size: 10px;
+            width: 150px;
+
+        }
+        .reu button:nth-of-type(2){
+            width: 35px;
+            background-color: #bbbbbb;
+            color: #eee;
+           
+        }
+        .reu p:nth-of-type(2){
+            width: 490px;
+            text-align: left;
+            margin-left: 13px;
+            color: #bbbbbb;
         }
     </style>
 
@@ -67,36 +116,120 @@
 
 <body>
 
+<div id="hidden_menu">
+    <div class="hm_1"><a href="index.html">공부서점</a></div>
+    <div class="hm_2">
+       <span>대입&#183;수능</span>
+       <ul>
+        <p>대입학원</p>
+        <li><a href="">스카이에듀X숨마투스학원</a></li>
+        <li><a href="">남양주 스카이에듀 기숙학원</a></li>
+        <li><a href="">수원 스카이에듀학원</a></li>
+        <li><a href="">수원 스카이에듀학원 단과</a></li>
+        <li><a href="">대 스카이에듀학원</a></li>
+        <li><a href="">숨마투스학원 선릉 예체능관</a></li>
+        <li><a href="">스카이에듀 공교육</a></li>
+        <li><a href="">수사컨설팅</a></li>
+       </ul>
+    </div>
+    <div class="hm_3">
+        <span>어학&#183;회화&#183;유학</span>
+        <ul>
+            <li><a href="">영단기토익</a></li>
+            <li><a href="">영단기토스</a></li>
+            <li><a href="">영단기오픽</a></li>
+            <li><a href="">영단기텝스</a></li>
+            <li><a href="">영단기토플</a></li>
+            <li><a href="">영단기G-Telp</a></li>
+            <li><a href="">커넥츠스피킹</a></li>
+            <li><a href="">GMAT/GRE단기</a></li>
+            <li><a href="">중단기</a></li>
+            <li><a href="">일단기</a></li>
+        </ul>
 
-    <div class="a">
-        <div class="flex_">
-            <p class="a1">최근검색어</p>
-            <p class="a2">인기급상승</p>
-        </div>
+    </div>
+    <div class="hm_4">
+        <span>대학생&#183;취업</span>
+        <ul>
+            <li><a href="">공기업단기</a></li>
+        </ul>
 
-        <div class="b0">
-            <div class="b">
-               
-            </div>
-            <div class="c">
-             <ol>
-                <li><a href="">2022 공단기 기본서 시리즈</a></li>
-                <li><a href="">EBS 수능특강</a></li>
-                <li><a href="">선재국어</a></li>
-                <li><a href="">에스티유니타스</a></li>
-                <li><a href="">기화펜</a></li>
-                <li><a href="">이동기</a></li>
-                <li><a href="">한국사능력시험</a></li>
-                <li><a href="">문동균</a></li>
-                <li><a href="">애드온</a></li>
-                <li><a href="">써니 행정법</a></li>
-             </ol>
-            </div>
-        </div>
-        <p class="c2"> </p>
+    </div>
+    <div class="hm_5">
+        <span>자격증</span>
+        <ul>
+            <li><a href="">자단기</a></li>
+            <li><a href="">전기단기</a></li>
+        </ul>
+
+    </div>
+    <div class="hm_6">
+        <span>공무원</span>
+        <ul>
+            <li><a href="">공단기</a></li>
+            <li><a href="">기술계리단기</a></li>
+            <li><a href="">경단기</a></li>
+            <li><a href="">소방단기</a></li>
+        </ul>
+        <p>공무원 학원</p>
+      <ul>
+        <li><a href="">공단기학원</a></li>
+        <li><a href="">경단기학원</a></li>
+        <li><a href="">경찰간부학원</a></li>
+        <li><a href="">소방단기학원</a></li>
+        <li><a href="">범검단기학원</a></li>
+        <li><a href="">경찰독학관</a></li>
+        <li><a href="">한국공무원학원</a></li>
+        <li><a href="">공무원독학관</a></li>
+        <li><a href="">경찰독학관</a></li>
+        <li><a href="">소방단기학원</a></li>
+        <li><a href="">공단기학원</a></li>
+        <li><a href="">경단기학원</a></li>
+        <li><a href="">소방단기학원</a></li>
+        <li><a href="">공무원독학관</a></li>
+        <li><a href="">경찰독학관</a></li>
+        <li><a href="">프랩24 공단기</a></li>
+        <li><a href="">프랩24 경단기</a></li>
+      </ul>
+
+    </div>
+    <div class="hm_7">
+        <span>전문직</span>
+        <ul>
+            <li><a href="">PEET단기</a></li>
+            <li><a href="">MD단기</a></li>
+            <li><a href="">공인단기</a></li>
+            <li><a href="">노무사단기</a></li>
+            <li><a href="">법무사단기</a></li>
+        </ul>
+        <p>전문학원</p>
+        <ul>
+            <li><a href="">MD학원</a></li>
+            <li><a href="">노무사단기학원</a></li>
+            <li><a href="">법무사단기학원</a></li>
+        </ul>
+
+    </div>
+    <div class="hm_8">
+        <span>뷰티</span>
+        <ul>
+            <li><a href="">뷰티클래스</a></li>
+        
+        </ul>
+        <p>전문학원</p>
+        <ul>
+            <li><a href="">MBC아케데미뷰티학원</a></li>
+      
+        </ul>
 
     </div>
 
+    
+</div>
+
+
+<!-- 
+    https://static.conects.com/static/img/conects/common/lnb_icon_open.png -->
     <script>
 
     </script>

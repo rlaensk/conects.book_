@@ -1,13 +1,8 @@
-// slider
-
-// $(function(){
-//     $('.hidden>ul>li').on('hover',function(){
-//         let ho_li=$(this).index();
-//         $(this).
-
-
-//     })
-// });
+//  hidden_nav
+$('.hid').click(function(){
+    $(this).not('.hid').parent().next().slideUp();
+    $(this).find('.none').toggleClass().slideToggle();
+});
 
 
 // slider
@@ -49,6 +44,22 @@ for (let i = 0; i < search2.length; i++) {
 };
 
 
+// on&off
+
+let on=document.getElementsByClassName('on')
+$('.on').on('click', function () {
+    if($('.on').text()==='OFF'){
+    $('.on').text('ON');
+    $('.on').css({backgroundColor:'#222'});
+    $('.off').text('기능을 켜려면 ON 버튼을 클릭해주세요.')
+    }else{
+        $('.on').text('OFF');
+        $('.on').css({backgroundColor:' #bbbbbb'});
+     $('.off').text('기능을 끄려면 OFF 버튼을 클릭해주세요.');
+    }
+});
+
+
 
 
 $('.all1').on('click', function () {
@@ -70,22 +81,16 @@ $('.header_m>li').mouseenter(function () {
 
 // form
 
-$('form>input').click(function () {
-    $('.seach_mimi').css('z-index','200');
-    $('.seach_mimi').not().removeClass('active');
-    $('.seach_mimi').toggleClass(' active').slideToggle();
+$('form').on('click',function () {
 
+    $('.seach_mimi').toggleClass('opc');
 });
+   
 
-let tex_c=document.getElementsByClassName('off')
-let tex_c2=document.getElementsByClassName('tex_c2')
-
-tex_c.addEventListener('click', function(){
-    if(tex_c.innerText==="OFF"){
-        tex_c.innerText='ON';
-        tex_c2.innerText='기능을 켜려면 ON 버튼을 클릭해 주세요!';
-    }else tex_c.innerText='OFF';
-        tex_c2.innerText='기능을 끄려면 OFF 버튼을 클릭해 주세요';
+$(function(){
+$('#hidden>div').click(function(){
+    $(this).slideToggle();
+});
 });
 
 $(function () {
