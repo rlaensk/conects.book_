@@ -81,8 +81,8 @@ $('.on').on('click', function () {
 
 
 
-$('.hidden_menu').on('click', function () {
-    $('.all').css({ opacity: 1, zIndex: 260 });
+$('.all1').on('click', function () {
+    $('.all_box').css({ opacity: 1, zIndex: 260 });
 });
 
 $('.close').click(function () {

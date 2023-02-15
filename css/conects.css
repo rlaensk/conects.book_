@@ -109,10 +109,10 @@ li {
 }
 #hidden_nav > div span {
   display: inline-block;
-  width: 155px;
+  width: 136px;
   height: 45px;
   line-height: 40px;
-  padding-left: 10px;
+  padding-left: 30px;
   font-size: 12px;
   border-top: 1px solid #e9e9e9;
   cursor: pointer;
@@ -128,8 +128,8 @@ li {
 #hidden_nav > div .none > ul > li {
   display: inline-block;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 53px;
   font-size: 11px;
   font-family: "Pretendard-Regular";
   background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
@@ -153,11 +153,11 @@ li {
   font-family: "LINESeedKR-Bd";
 }
 #hidden_nav > div .none p {
-  width: 92%;
+  width: 88%;
   height: 40px;
   line-height: 40px;
   background-color: #e9e9e9;
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 12px;
 }
 
@@ -456,6 +456,7 @@ li {
   z-index: 130;
   left: 0;
   top: 65px;
+  opacity: 0;
 }
 .hidden > .hidden_menu > .all_box > .all {
   width: 840px;
@@ -469,7 +470,21 @@ li {
   align-items: center;
   left: 0px;
   top: 0;
-  opacity: 0;
+}
+.hidden > .hidden_menu > .all_box > .all > .close {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #222222;
+  background-color: #222222;
+  color: #eee;
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  line-height: 26px;
+  font-size: 33px;
+  z-index: 30;
+  cursor: pointer;
+  text-align: center;
 }
 .hidden > .hidden_menu > .all_box > .all > p {
   width: 155px;
@@ -483,19 +498,6 @@ li {
   display: block;
   width: 100%;
   height: 100%;
-}
-.hidden > .hidden_menu > .all_box > .all > p:nth-of-type(1) {
-  width: 26px;
-  height: 26px;
-  border: 1px solid #222222;
-  background-color: #222222;
-  color: #eee;
-  position: absolute;
-  top: -6px;
-  right: -5px;
-  line-height: 23px;
-  font-size: 33px;
-  cursor: pointer;
 }
 .hidden > .hidden_menu > .all_box > .all > p:hover a {
   background-color: #222222;
