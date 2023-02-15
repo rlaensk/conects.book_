@@ -190,3 +190,76 @@
   line-height: 30px;
   border: 1px solid rgba(226, 226, 226, 0.4784313725);
 }
+#book_kind > .sell .bc {
+  width: 100%;
+  height: 160px;
+  align-items: center;
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.3137254902);
+}
+#book_kind > .sell .bc > .bc_ti {
+  width: 100px;
+  height: 100px;
+}
+#book_kind > .sell .bc > .bc_ti > a {
+  width: 48px;
+  height: 20px;
+  display: block;
+  font-size: 11px;
+  background-color: #222222;
+  border-radius: 6px;
+  color: #eee;
+  margin-top: 10px;
+  margin-left: 3.5px;
+  text-align: center;
+  line-height: 20px;
+}
+#book_kind > .sell .bc > .sec > select {
+  width: 473px;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(163, 163, 163, 0.3137254902);
+}
+#book_kind > .sell .bc > .sec > .tex > p {
+  font-size: 12px;
+  color: #a3a3a3;
+  line-height: 20px;
+}
+#book_kind .Benefit {
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.3137254902);
+}
+#book_kind .Benefit > .bene > h4 {
+  line-height: 30px;
+}
+#book_kind .Benefit > .be_t {
+  margin-left: 33px;
+}
+#book_kind .Benefit > .be_t > p {
+  height: 26px;
+  border: 1px solid rgba(163, 163, 163, 0.3137254902);
+  font-size: 11px;
+  border-radius: 9px;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 29px;
+  padding-left: 16px;
+}
+#book_kind .Benefit > .be_t > .be1 {
+  width: 65px;
+  background: #FFFFFF url("//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_2.png") no-repeat 10px 9px;
+}
+#book_kind .Benefit > .be_t > .be2 {
+  width: 82px;
+  background: #FFFFFF url("//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_5.png") no-repeat 10px 7px;
+}
+#book_kind .Benefit > .be_t > .be3 {
+  width: 63px;
+  background: #FFFFFF url("//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_3.png") no-repeat 10px 6px;
+}
+#book_kind .count-num {
+  width: 100%;
+  height: 200px;
+}
