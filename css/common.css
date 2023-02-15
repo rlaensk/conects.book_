@@ -453,7 +453,7 @@ li {
   width: 880px;
   height: 470px;
   position: absolute;
-  z-index: 130;
+  z-index: 10;
   left: 0;
   top: 65px;
   opacity: 0;

@@ -86,7 +86,7 @@ $('.all1').on('click', function () {
 });
 
 $('.close').click(function () {
-    $('.all_box').css({ opacity: 0, zIndex: 0 });
+    $('.all_box').css({ opacity: 0, zIndex:-50 });
 });
 
 // hidden_menu
@@ -430,3 +430,23 @@ $('.next_r').on('click', function () {
     });
 
 });
+
+
+// sub js
+
+
+// $.ajax({
+//     method: "GET",
+//     url: "https://dapi.kakao.com/v3/search/book?target=title",
+//     data: { query: "나침판 기출변형" },
+//     async: false,
+//     headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
+// })
+//     .done(function (msg) {
+        
+        
+
+
+//             $('.book_img').prepend("<img src='" + msg.documents[0].thumbnail + "'/>");$
+
+//     });
