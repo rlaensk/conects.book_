@@ -1,9 +1,28 @@
 //  hidden_nav
 $('.hid').click(function(){
-    $(this).not('.hid').parent().next().slideUp();
-    $(this).find('.none').toggleClass().slideToggle();
+    $(this).find('span').css({backgroundColor:'#fff',color:'#222'});
+
+    $(this).find('span').css({backgroundColor:'#182c8d',color:'#eee'});
+    $(this).siblings().find('span').css({backgroundColor:'#fff',color:'#222'});
+
+    $('.none').stop().slideUp();
+    $(this).find('.none').stop().slideToggle();
+
 });
 
+$('.cli').click(function () {
+
+    $('#hidden_nav').toggleClass('ani');
+    if ($('#hidden_nav').hasClass('ani')) {
+        $('#hidden_nav').stop().animate({ left: -165 }, 800);
+        $('.cli>img').attr({ src: "https://static.conects.com/static/img/conects/common/lnb_icon_open.png" }).css('margin-left', '35px');
+    } else {
+        $('.cli>img').attr({ src: "https://static.conects.com/static/img/conects/common/lnb_icon_close.png" }).css('margin-left', '0px');
+        $('#hidden_nav').stop().animate({ left: 0 }, 500);
+    }
+
+
+});
 
 // slider
 
@@ -62,12 +81,12 @@ $('.on').on('click', function () {
 
 
 
-$('.all1').on('click', function () {
-    $('.all').css({ opacity: 1, zIndex: 151 });
+$('.hidden_menu').on('click', function () {
+    $('.all').css({ opacity: 1, zIndex: 260 });
 });
 
 $('.close').click(function () {
-    $('.all').css({ opacity: 0, zIndex: 0 });
+    $('.all_box').css({ opacity: 0, zIndex: 0 });
 });
 
 // hidden_menu
