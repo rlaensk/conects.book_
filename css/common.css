@@ -20,6 +20,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
   color: #222222;
   font-family: "SUIT-Regular";
@@ -109,7 +110,7 @@ li {
 }
 #hidden_nav > div span {
   display: inline-block;
-  width: 136px;
+  width: 165px;
   height: 45px;
   line-height: 40px;
   padding-left: 30px;
@@ -153,7 +154,7 @@ li {
   font-family: "LINESeedKR-Bd";
 }
 #hidden_nav > div .none p {
-  width: 88%;
+  width: 100%;
   height: 40px;
   line-height: 40px;
   background-color: #e9e9e9;
@@ -311,12 +312,12 @@ li {
 
 .header_list {
   width: 1130px;
-  height: 65px;
+  height: 60px;
   margin: 0 auto;
 }
 .header_list .hidden {
   width: 1130px;
-  height: 65px;
+  height: 60px;
 }
 .header_list .hidden > div.header_m_h {
   width: 865px;
@@ -324,7 +325,7 @@ li {
 }
 .header_list .hidden > div.header_m_h > ul {
   width: 2938px;
-  height: 65px;
+  height: 60px;
   justify-content: space-around;
   position: relative;
   left: 4px;
@@ -335,7 +336,7 @@ li {
 }
 .header_list .hidden > div.header_m_h > ul li {
   width: 180px;
-  height: 65px;
+  height: 60px;
   font-size: 13px;
 }
 .header_list .hidden > div.header_m_h > ul li a {
@@ -357,7 +358,7 @@ li {
 }
 .header_list .hidden > div.header_m_h > ul .fi_ > a span {
   width: 130px;
-  margin-top: 21px;
+  margin-top: 15px;
 }
 .header_list .hidden > div.header_m_h > ul li:hover {
   font-weight: 900;
@@ -369,13 +370,13 @@ li {
 
 .hidden > .hidden_menu {
   width: 167px;
-  height: 65px;
+  height: 60px;
   position: relative;
 }
 .hidden > .hidden_menu > .all1 {
-  width: 141px;
-  height: 65px;
-  line-height: 65px;
+  width: 165px;
+  height: 60px;
+  line-height: 60px;
   display: block;
   font-family: "LINESeedKR-Bd";
   color: #eee;
@@ -392,7 +393,7 @@ li {
   z-index: 5;
   background-color: #eee;
   right: 10px;
-  top: 18px;
+  top: 22px;
 }
 .hidden > .hidden_menu > .all1 > strong:nth-of-type(2)::after {
   content: "";
@@ -403,7 +404,7 @@ li {
   z-index: 5;
   background-color: #eee;
   right: 10px;
-  top: 25px;
+  top: 30px;
 }
 .hidden > .hidden_menu > .all1 > strong:nth-of-type(3)::after {
   content: "";
@@ -414,7 +415,7 @@ li {
   z-index: 5;
   background-color: #eee;
   right: 10px;
-  top: 32px;
+  top: 38px;
 }
 .hidden > .hidden_menu > .all2 {
   width: 164px;

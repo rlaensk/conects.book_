@@ -4,6 +4,9 @@
     display: flex;
 }
 
+@mixin border {
+    border: 1px solid #a3a3a3;
+}
 
 #catalog {
     width: 1130px;
@@ -55,7 +58,7 @@
     >a {
         display: inline-block;
         width: 100%;
-        height: 100%;
+        height: 80%;
         position: absolute;
         top: 0;
 
@@ -94,10 +97,11 @@
 
 #book_kind {
     width: 1130px;
-    height: 800px;
+    height: auto;
     margin: 0 auto;
     position: relative;
     z-index: 11;
+    justify-content: space-between;
 
     >.book_img_b {
         width: 480px;
@@ -183,9 +187,9 @@
     }
 
     >.sell {
-        width: 600px;
-        height: 100%;
-        margin-left: 80px;
+        width: 580px;
+        height: auto;
+
 
 
         >.title {
@@ -298,6 +302,8 @@
         border-bottom: 1px solid #a3a3a350;
 
         >.bene {
+            width: 85px;
+
             >h4 {
                 line-height: 30px;
             }
@@ -305,10 +311,10 @@
 
 
         >.be_t {
-            margin-left: 33px;
+
 
             >p {
-              
+
                 height: 26px;
                 border: 1px solid #a3a3a350;
                 font-size: 11px;
@@ -323,14 +329,14 @@
             >.be1 {
                 width: 65px;
                 background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_2.png') no-repeat 10px 9px;
-               
-            
+
+
             }
 
             >.be2 {
                 width: 82px;
                 background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_5.png') no-repeat 10px 7px;
-                           
+
             }
 
             >.be3 {
@@ -339,8 +345,547 @@
             }
         }
     }
-    .count-num{
+
+    .count-num {
         width: 100%;
-        height: 200px;
+        height: 90px;
+        align-items: center;
+
+        .count_t {
+            width: 95px;
+        }
+
+        .price-count {
+            width: 200px;
+            margin-top: 5px;
+
+            >button {
+                border: none;
+
+            }
+
+
+
+            .ma {
+                background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_minus.png') no-repeat 2px 0px;
+                background-size: 32px;
+                width: 33px;
+                height: 33px;
+
+            }
+
+            >input {
+                width: 55px;
+                height: 30px;
+                border: 1px solid #a3a3a350;
+                text-align: center;
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            .pl {
+                background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_plus.png') no-repeat -1px 0;
+                background-size: 32px;
+                width: 33px;
+                height: 33px;
+
+
+            }
+        }
+
+        .disc {
+            width: 280px;
+            justify-content: flex-end;
+
+            >span {
+                font-size: 20px;
+                color: #7777778e;
+                text-decoration: line-through;
+                margin-top: 69px;
+            }
+        }
+
     }
-} 
+
+    .discount_price {
+        width: 100%;
+        height: 57px;
+
+        justify-content: flex-end;
+        margin-top: 10px;
+
+        >p {
+            width: 65px;
+            height: 50px;
+
+            line-height: 50px;
+            text-align: center;
+            font-family: 'LINESeedKR-Bd';
+        }
+
+        >span {
+            width: auto;
+            height: 50px;
+            font-size: 35px;
+
+            font-family: 'LINESeedKR-Bd';
+            text-align: right;
+
+        }
+
+    }
+
+    .d-te {
+        width: 100%;
+        height: 30px;
+        justify-content: flex-end;
+
+        .ga::before {
+            content: "적립";
+            display: inline-block;
+            width: 35px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 11px;
+            background-color: tomato;
+            color: #FFFFFF;
+
+        }
+
+        .ga::after {
+            content: "적립금 975원";
+            display: inline-block;
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 11px;
+
+            color: tomato;
+
+        }
+
+        .gi::after {
+            content: "(5%)";
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 11px;
+            color: #222222;
+
+        }
+    }
+
+    .sell_btn {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+
+        >button {
+            width: 50%;
+            height: 100%;
+            border: 1px solid #7777778e;
+            background-color: transparent;
+            font-size: 17px;
+            font-family: 'LINESeedKR-Bd';
+            color: #222222;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .buy {
+            background-color: rgba(37, 20, 68, 0.849);
+            color: #eee;
+            box-shadow: 1px 1px 10px #2222225e;
+        }
+    }
+
+    .in-b {
+        width: 100%;
+        height: 107px;
+
+        margin-top: 25px;
+        border: 1px solid #a3a3a350;
+        padding: 25px;
+        border-radius: 5px;
+        color: #b9b9b93b;
+
+        >.in-t {
+            width: 95px;
+            font-size: 12px;
+
+            >p {
+                height: 20px
+            }
+
+            ;
+        }
+
+        >.in-t2 {
+            font-size: 12px;
+
+            >p {
+                height: 20px;
+            }
+        }
+    }
+
+}
+
+#review {
+    width: 1130px;
+    height: 200px;
+    margin: 0 auto;
+
+    >#re_a_box {
+        border: 1px solid #a3a3a350;
+        position: relative;
+        padding: 20px;
+        margin: 80px 0;
+
+        >.re_te {
+            width: 100%;
+            height: 33px;
+            line-height: 25px;
+
+            >p {
+                font-family: 'LINESeedKR-Bd';
+            }
+
+            >a {
+                display: inline-block;
+                width: 100px;
+
+                font-size: 11px;
+                text-align: center;
+
+            }
+
+        }
+
+        >.re-bt {
+
+            >div {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                line-height: 40px;
+                border: 1px solid transparent;
+                color: #a3a3a350;
+                text-align: center;
+                border-radius: 50%;
+                position: absolute;
+                top: 80px;
+                background-color: #ffffff;
+                cursor: pointer;
+                box-shadow: 1px 1px 10px #22222228;
+            }
+
+            >div:hover {
+                background-color: #a3a3a3;
+                color: #FFFFFF;
+            }
+
+            .prev {
+                left: -56px;
+
+            }
+
+            .next {
+                right: -56px;
+                padding-left: 5px;
+            }
+        }
+
+        >.re_box {
+            width: 1130px;
+            height: 66%;
+            overflow: hidden;
+
+            >.re_hidden {
+                width: 500%;
+                height: 100%;
+
+                >.rev-b {
+                    width: 1130px;
+                    height: 100%;
+
+
+                    >div {
+                        width: 50%;
+                        height: 100%;
+
+                        >.r-img {
+                            >img {
+                                width: 130px;
+                                height: 130px;
+                            }
+                        }
+
+                        >.r-t {
+                            width: 66%;
+                            height: 104px;
+
+                            >ul {
+                                font-size: 12px;
+
+                                >li {
+                                    line-height: 30px;
+                                }
+                            }
+
+                            >p {
+                                font-size: 14px;
+                                line-height: 30px;
+                                font-family: 'LINESeedKR-Bd';
+                            }
+
+                            >span {
+                                font-size: 12px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+
+                    .rev1 {
+                        justify-content: space-around;
+                    }
+
+                    .rev2 {
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+#buy_list {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin: 80px 0;
+
+    >.buy_box {
+        width: 1130px;
+        height: 330px;
+        margin: 0 auto;
+        border-bottom: 1px solid #77777762;
+        ;
+
+        >ul {
+            width: 100%;
+            height: 50px;
+
+
+            >li {
+                width: 200px;
+                height: 100%;
+                line-height: 50px;
+                text-align: center;
+
+                border: 1px solid #a3a3a3;
+                border-bottom: none;
+
+                >a {
+                    font-family: 'LINESeedKR-Bd';
+                }
+            }
+        }
+
+        >.buy-all {
+            width: 1903px;
+             height: 400px;
+             background: #dbdbdb31;
+            position: absolute;
+            left: 0;
+            >.buy_kind {
+                width: 100%;
+                height: 320px;
+                transform: translate(20.5%, 0);
+                margin-top: 20px;
+
+
+                
+
+                >.adon {
+                    width: 250px;
+                    height: 100%;
+                    position: relative;
+
+
+
+                    >h3 {
+                        width: 160px;
+                        height: 100px;
+                        line-height: 25px;
+                        padding: 19px 0 0 10px;
+                    }
+
+                    >.ch_b {
+                        position: absolute;
+                        top: 220px;
+                        left: -10px;
+
+                        >#ad {
+                            margin-left: 10px;
+                        }
+
+                        >label {
+                            font-size: 13px;
+                            margin-left: 10px;
+
+                        }
+                    }
+
+                    >.ad_bt {
+                        width: 100%;
+                        margin-top: 150px;
+
+                        >a {
+                            display: inline-block;
+                            width: 110px;
+                            height: 40px;
+                            line-height: 25px;
+                            border: 1px solid #a3a3a3;
+                            text-align: center;
+                            padding-top: 5px;
+                            font-size: 13px;
+
+                            >img {
+                                width: 15px;
+                                height: 15px;
+                                margin-left: -10px;
+                                margin-right: 10px;
+                                margin-bottom: -4px;
+
+                            }
+
+                        }
+                    }
+                }
+
+                >.ad_chk {
+                    width: 880px;
+                    height: 320px;
+                    position: relative;
+
+                    >.adchk-bt {
+                        >div {
+                            width: 40px;
+                            height: 40px;
+                            font-size: 20px;
+                            line-height: 40px;
+                            border: 1px solid transparent;
+                            color: #a3a3a350;
+                            text-align: center;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 80px;
+                            background-color: #ffffff;
+                            cursor: pointer;
+                            box-shadow: 1px 1px 10px #22222228;
+                        }
+
+                        >.ad-prev {
+                            padding-right: 4px;
+                        }
+
+                        >.ad-next {
+                            right: -25px;
+                            padding-left: 5px;
+                        }
+
+                        >div:hover {
+                            background-color: #a3a3a3;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    >.ad_hidden {
+                        width: 860px;
+                        height: 320px;
+                        overflow: hidden;
+
+                        >ul {
+                            width: 140%;
+                            justify-content: space-around;
+                            margin-left: 40px;
+
+                            >li {
+                                width: 155px;
+
+                                >input {
+                                    position: relative;
+                                    top: 17px;
+                                    left: -20px;
+                                }
+
+                                >.adimg {
+                                    >a {
+
+                                        width: 120px;
+                                        height: 150px;
+                                        @include border;
+                                        align-items: center;
+
+                                        >img {
+                                            width: 118px;
+                                            height: 130px;
+                                        }
+                                    }
+                                }
+
+                                >h4 {
+                                    font-weight: lighter;
+                                    height: 50px;
+                                    width: 123px;
+                                    margin-top: 11px;
+                                    font-size: 15px;
+                                }
+
+                                >p {
+                                    width: 123px;
+                                    font-size: 15px;
+                                    font-family: 'LINESeedKR-Bd';
+                                    text-align: center;
+                                    line-height: 30px;
+                                }
+
+                                >span {
+                                    display: inline-block;
+                                    width: 30px;
+                                    font-size: 12px;
+                                    margin-left: 25px;
+                                }
+
+                                >.sale {
+                                    color: tomato;
+                                    font-weight: bold;
+                                }
+
+                                >.no {
+                                    margin-left: 10px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

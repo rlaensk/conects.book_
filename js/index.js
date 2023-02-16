@@ -432,21 +432,37 @@ $('.next_r').on('click', function () {
 });
 
 
-// sub js
+
+//  sub js
 
 
-// $.ajax({
-//     method: "GET",
-//     url: "https://dapi.kakao.com/v3/search/book?target=title",
-//     data: { query: "나침판 기출변형" },
-//     async: false,
-//     headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
-// })
-//     .done(function (msg) {
+let price_sum=17550;
+
+$('.price_sum').append(price_sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")+"원");
+
+// 총 상품금액
+
+$(function(){
+    $('.pl').click(function(){
+        if($('.co-v').val()>999){
+            alert("1000권 초과 구매가 불가능합니다.");
+            $('.co-v').val(1000);
+        }else{
+            $('.co-v').val(parseInt($(".co-v").val())+1);
+            let sum=parseInt($(".co-v").val()*price_sum);
+            $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")+"원");
+        }
         
-        
+    });
 
 
-//             $('.book_img').prepend("<img src='" + msg.documents[0].thumbnail + "'/>");$
-
-//     });
+    $('.ma').click(function(){
+        if($('.co-v').val()<2){
+            alert('1권 이상 구매가 가능합니다.');
+            $('.co-v').val(2);
+        }
+        $('.co-v').val(parseInt($('.co-v').val())-1);
+        let sum= parseInt($('.co-v').val()*price_sum);
+        $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")+"원");
+    });
+});
