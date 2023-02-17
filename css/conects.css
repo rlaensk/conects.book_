@@ -252,13 +252,13 @@
   width: 12%;
   height: 30px;
   float: left;
-  border: 1px solid lightgray;
+  border: 1px solid #eee;
   line-height: 30px;
   text-align: center;
   font-size: 14px;
   border-radius: 30px;
   margin: 10px 13.9px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #eee;
   font-family: "LINESeedKR";
 }
 #book_kind .book_list > ul li.action {
@@ -323,7 +323,7 @@
 #book_kind .books > div img {
   width: 195x;
   height: 250px;
-  border: 1px solid lightgray;
+  border: 1px solid #eee;
 }
 
 #writers {
@@ -405,7 +405,7 @@
 #recommendation > ul > li > a > img {
   width: 100%;
   height: 100%;
-  border: 0.5px solid lightgray;
+  border: 0.5px solid #eee;
 }
 #recommendation > ul > li > h4 {
   margin: 10px 0;

@@ -1219,6 +1219,7 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+
     >.intro-box{
         width: 100%;
         background: #dbdbdb31;
@@ -1249,9 +1250,13 @@
      }
 } 
 
-#introduce_box{
+#introduce-box{
     width: 1130px;
     height: 1000px;
-    margin: 0 auto;
+    >.book-in{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+    }
 
-}
+} 

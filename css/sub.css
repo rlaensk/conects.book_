@@ -988,8 +988,12 @@
   background-color: white;
 }
 
-#introduce_box {
+#introduce-box {
   width: 1130px;
   height: 1000px;
-  margin: 0 auto;
+}
+#introduce-box > .book-in {
+  width: 500px;
+  height: 500px;
+  background-color: red;
 }
