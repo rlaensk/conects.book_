@@ -1,9 +1,9 @@
 //  hidden_nav
-$('.hid').click(function(){
-    $(this).find('span').css({backgroundColor:'#fff',color:'#222'});
+$('.hid').click(function () {
+    $(this).find('span').css({ backgroundColor: '#fff', color: '#222' });
 
-    $(this).find('span').css({backgroundColor:'#182c8d',color:'#eee'});
-    $(this).siblings().find('span').css({backgroundColor:'#fff',color:'#222'});
+    $(this).find('span').css({ backgroundColor: '#182c8d', color: '#eee' });
+    $(this).siblings().find('span').css({ backgroundColor: '#fff', color: '#222' });
 
     $('.none').stop().slideUp();
     $(this).find('.none').stop().slideToggle();
@@ -65,16 +65,16 @@ for (let i = 0; i < search2.length; i++) {
 
 // on&off
 
-let on=document.getElementsByClassName('on')
+let on = document.getElementsByClassName('on')
 $('.on').on('click', function () {
-    if($('.on').text()==='OFF'){
-    $('.on').text('ON');
-    $('.on').css({backgroundColor:'#222'});
-    $('.off').text('기능을 켜려면 ON 버튼을 클릭해주세요.')
-    }else{
+    if ($('.on').text() === 'OFF') {
+        $('.on').text('ON');
+        $('.on').css({ backgroundColor: '#222' });
+        $('.off').text('기능을 켜려면 ON 버튼을 클릭해주세요.')
+    } else {
         $('.on').text('OFF');
-        $('.on').css({backgroundColor:' #bbbbbb'});
-     $('.off').text('기능을 끄려면 OFF 버튼을 클릭해주세요.');
+        $('.on').css({ backgroundColor: ' #bbbbbb' });
+        $('.off').text('기능을 끄려면 OFF 버튼을 클릭해주세요.');
     }
 });
 
@@ -86,30 +86,30 @@ $('.all1').on('click', function () {
 });
 
 $('.close').click(function () {
-    $('.all_box').css({ opacity: 0, zIndex:-50 });
+    $('.all_box').css({ opacity: 0, zIndex: -50 });
 });
 
 // hidden_menu
 $('.header_m>li').mouseenter(function () {
     let i = $(this).index();
     console.log(i)
-    $('.slider_img').css('z-index','-1');
+    $('.slider_img').css('z-index', '-1');
     $('.slider_box>div').eq(i).css('opacity', '1').siblings().css('opacity', 0);
 
 });
 
 // form
 
-$('form').on('click',function () {
+$('form').on('click', function () {
 
     $('.seach_mimi').toggleClass('opc');
 });
-   
 
-$(function(){
-$('#hidden>div').click(function(){
-    $(this).slideToggle();
-});
+
+$(function () {
+    $('#hidden>div').click(function () {
+        $(this).slideToggle();
+    });
 });
 
 $(function () {
@@ -130,9 +130,9 @@ $(function () {
             page = $('.header_m>li').length - 5;
             return
         }
-       
+
         $('.header_m').stop().animate({ marginLeft: -173 * page }, 800);
-    
+
 
     });
 });
@@ -146,7 +146,7 @@ $(function () {
 $('.list2>li').mouseenter(function () {
     let i = $(this).index();
 
-    $('.slider_img').css('z-index','10')
+    $('.slider_img').css('z-index', '10')
 
     $('.slider_img>ul').eq(i).css("opacity", '1').siblings().css("opacity", '0');
 });
@@ -436,33 +436,146 @@ $('.next_r').on('click', function () {
 //  sub js
 
 
-let price_sum=17550;
+let price_sum = 17550;
 
-$('.price_sum').append(price_sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")+"원");
+$('.price_sum').append(price_sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
 
 // 총 상품금액
 
-$(function(){
-    $('.pl').click(function(){
-        if($('.co-v').val()>999){
+$(function () {
+    $('.pl').click(function () {
+        if ($('.co-v').val() > 999) {
             alert("1000권 초과 구매가 불가능합니다.");
             $('.co-v').val(1000);
-        }else{
-            $('.co-v').val(parseInt($(".co-v").val())+1);
-            let sum=parseInt($(".co-v").val()*price_sum);
-            $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")+"원");
+        } else {
+            $('.co-v').val(parseInt($(".co-v").val()) + 1);
+            let sum = parseInt($(".co-v").val() * price_sum);
+            $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
         }
-        
+
     });
 
 
-    $('.ma').click(function(){
-        if($('.co-v').val()<2){
+    $('.ma').click(function () {
+        if ($('.co-v').val() < 2) {
             alert('1권 이상 구매가 가능합니다.');
             $('.co-v').val(2);
         }
-        $('.co-v').val(parseInt($('.co-v').val())-1);
-        let sum= parseInt($('.co-v').val()*price_sum);
-        $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")+"원");
+        $('.co-v').val(parseInt($('.co-v').val()) - 1);
+        let sum = parseInt($('.co-v').val() * price_sum);
+        $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
     });
 });
+
+
+
+// review-sub
+$('.prev').click(function () {
+    $('.rev-b:last').prependTo('.re_hidden');
+    $('.re_hidden').css('margin-left', -1088);
+    $('.re_hidden').stop().animate({ marginLeft: 0 }, 800);
+});
+
+
+
+$('.next').on('click', function () {
+    $('.re_hidden').stop().animate({ marginLeft: '-1088px' }, 800, function () {
+        $('.rev-b:first').appendTo('.re_hidden');
+        $('.re_hidden').css('margin-left', '0');
+    });
+
+});
+
+// adon-sub
+$('.ad-prev').click(function () {
+    $('.adon-ul>li:last').prependTo('.adon-ul');
+    $('.adon-ul').css('margin-left', -165);
+    $('.adon-ul').stop().animate({ marginLeft: 0 }, 800);
+});
+
+
+
+$('.ad-next').on('click', function () {
+    $('.adon-ul').stop().animate({ marginLeft: '-165px' }, 800, function () {
+        $('.adon-ul>li:first').appendTo('.adon-ul');
+        $('.adon-ul').css('margin-left', '0');
+    });
+
+});
+
+// adon-sub
+$('.ad-prev').click(function () {
+    $('.ad-ul2>li:last').prependTo('.ad-ul2');
+    $('.ad-ul2').css('margin-left', -165);
+    $('.ad-ul2').stop().animate({ marginLeft: 0 }, 800);
+});
+
+
+
+$('.ad-next').on('click', function () {
+    $('.ad-ul2').stop().animate({ marginLeft: '-165px' }, 800, function () {
+        $('.ad-ul2>li:first').appendTo('.ad-ul2');
+        $('.ad-ul2').css('margin-left', '0');
+    });
+
+});
+
+
+// adon
+
+$('.buy_box>ul>li').click(function () {
+    let i=$(this).index();
+    let li = $(this).index();
+    $(this).toggleClass('active').siblings().removeClass('active');
+   
+    $(this).closest('ul').siblings('.buy-all').find('.buy_kind').eq(i).addClass('dp').siblings().removeClass('dp').css('opacity','0');
+    console.log(i)
+  
+
+});
+
+
+
+
+
+
+
+// series API
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: { query: "모의고사" },
+    async: false,
+    headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
+})
+    .done(function (msg) {
+        console.log(msg)
+
+        // for문 (8개)
+        var divs = document.getElementsByClassName('se-li');
+        console.log(divs);
+
+        for (var j = 0; j < divs.length; j++) {
+
+
+
+
+            $('.se-img>a').eq(j).prepend("<img src='" + msg.documents[j].thumbnail + "'/>");
+
+
+            let tit = msg.documents[j].title;
+            let tit2 = tit.substring(0, 29);
+
+
+
+            $('.se-img').eq(j).append("<h4>" + tit2 + "</h4>");
+            let price = msg.documents[j].sale_price;
+
+            let price2 = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            console.log(price2);
+            $('.se-img').eq(j).append("<p>" + price2 + " 원 </p>");
+
+
+        }
+
+    });

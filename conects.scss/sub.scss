@@ -5,7 +5,7 @@
 }
 
 @mixin border {
-    border: 1px solid #a3a3a3;
+    border: 1px solid #eee;
 }
 
 #catalog {
@@ -195,7 +195,7 @@
         >.title {
             width: 100%;
             height: 130px;
-            border-bottom: 1px solid #d1d1d14b;
+            border-bottom: 1px solid #eee;
 
             >h3 {
                 margin-bottom: 20px;
@@ -236,7 +236,7 @@
                     width: 115px;
                     height: 30px;
                     line-height: 30px;
-                    border: 1px solid #e2e2e27a;
+                    border: 1px solid #eee;
                 }
 
                 >.in4 {
@@ -253,7 +253,7 @@
             height: 160px;
             align-items: center;
             margin-top: 15px;
-            border-bottom: 1px solid #a3a3a350;
+            border-bottom: 1px solid #eee;
 
             >.bc_ti {
                 width: 100px;
@@ -279,7 +279,7 @@
                     width: 473px;
                     height: 40px;
                     margin-bottom: 15px;
-                    border: 1px solid #a3a3a350;
+                    border: 1px solid #eee;
 
                 }
 
@@ -299,7 +299,7 @@
         width: 100%;
         height: 80px;
         align-items: center;
-        border-bottom: 1px solid #a3a3a350;
+        border-bottom: 1px solid #eee;
 
         >.bene {
             width: 85px;
@@ -316,7 +316,7 @@
             >p {
 
                 height: 26px;
-                border: 1px solid #a3a3a350;
+                border: 1px solid #eee;
                 font-size: 11px;
                 border-radius: 9px;
                 margin: 0 10px;
@@ -376,8 +376,8 @@
 
             >input {
                 width: 55px;
-                height: 30px;
-                border: 1px solid #a3a3a350;
+                height: 32px;
+                border: 1px solid #eee;
                 text-align: center;
 
                 &:focus {
@@ -493,7 +493,7 @@
         >button {
             width: 50%;
             height: 100%;
-            border: 1px solid #7777778e;
+            border: 1px solid #eee;
             background-color: transparent;
             font-size: 17px;
             font-family: 'LINESeedKR-Bd';
@@ -503,11 +503,13 @@
                 cursor: pointer;
             }
         }
+      
 
         .buy {
             background-color: rgba(37, 20, 68, 0.849);
             color: #eee;
             box-shadow: 1px 1px 10px #2222225e;
+            border: 0.5px solid transparent;
         }
     }
 
@@ -516,7 +518,7 @@
         height: 107px;
 
         margin-top: 25px;
-        border: 1px solid #a3a3a350;
+        border: 1px solid #eee;
         padding: 25px;
         border-radius: 5px;
         color: #b9b9b93b;
@@ -549,7 +551,7 @@
     margin: 0 auto;
 
     >#re_a_box {
-        border: 1px solid #a3a3a350;
+        border: 1px solid #eee;
         position: relative;
         padding: 20px;
         margin: 80px 0;
@@ -609,7 +611,7 @@
         }
 
         >.re_box {
-            width: 1130px;
+            width: 1100px;
             height: 66%;
             overflow: hidden;
 
@@ -618,7 +620,7 @@
                 height: 100%;
 
                 >.rev-b {
-                    width: 1130px;
+                    width: 1088px;
                     height: 100%;
 
 
@@ -672,18 +674,26 @@
 
 }
 
+.active{
+    background-color: #dbdbdb31;
+
+}
+.dp{
+    opacity: 1!important;
+}
+
+
 #buy_list {
     width: 100%;
     height: 450px;
     position: relative;
-    margin: 80px 0;
+    margin: 80px 0 0 0;
 
     >.buy_box {
         width: 1130px;
-        height: 330px;
+        height: 100%;
         margin: 0 auto;
-        border-bottom: 1px solid #77777762;
-        ;
+       
 
         >ul {
             width: 100%;
@@ -695,28 +705,25 @@
                 height: 100%;
                 line-height: 50px;
                 text-align: center;
-
-                border: 1px solid #a3a3a3;
+                font-family: 'LINESeedKR-Bd';
+                border: 1px solid #eee;
                 border-bottom: none;
-
-                >a {
-                    font-family: 'LINESeedKR-Bd';
-                }
+                cursor: pointer;                
             }
         }
 
         >.buy-all {
             width: 1903px;
-             height: 400px;
+             height: 330px;
              background: #dbdbdb31;
             position: absolute;
             left: 0;
             >.buy_kind {
                 width: 100%;
                 height: 320px;
-                transform: translate(20.5%, 0);
-                margin-top: 20px;
-
+                transform: translate(20.5%, 13px);
+                position: relative;
+              
 
                 
 
@@ -724,6 +731,7 @@
                     width: 250px;
                     height: 100%;
                     position: relative;
+                    padding: 15px;
 
 
 
@@ -731,13 +739,13 @@
                         width: 160px;
                         height: 100px;
                         line-height: 25px;
-                        padding: 19px 0 0 10px;
+                        padding: 19px 0;
                     }
 
                     >.ch_b {
                         position: absolute;
-                        top: 220px;
-                        left: -10px;
+                        top: 194px;
+                        left: 6px;
 
                         >#ad {
                             margin-left: 10px;
@@ -752,14 +760,240 @@
 
                     >.ad_bt {
                         width: 100%;
-                        margin-top: 150px;
+                        margin-top: 125px;
+                        justify-content: start;
 
                         >a {
                             display: inline-block;
-                            width: 110px;
+                            width: 115px;
                             height: 40px;
                             line-height: 25px;
-                            border: 1px solid #a3a3a3;
+                            border: 0.5px solid #eee;
+                            text-align: center;
+                            padding-top: 5px;
+                            font-size: 13px;
+                       
+                            >img {
+                                width: 15px;
+                                height: 15px;
+                                margin-left: -10px;
+                                margin-right: 10px;
+                                margin-bottom: -4px;
+
+                            }
+
+                        }
+                        >.b-no{
+                            border-right: none;
+                        }
+                    }
+                }
+
+                >.ad_chk {
+                    width: 880px;
+                    height: 320px;
+                    position: relative;
+
+                    >.adchk-bt {
+                        >div {
+                            width: 40px;
+                            height: 40px;
+                            font-size: 20px;
+                            line-height: 40px;
+                            border: 1px solid transparent;
+                            color: #a3a3a350;
+                            text-align: center;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 80px;
+                            background-color: #ffffff;
+                            cursor: pointer;
+                            box-shadow: 1px 1px 10px #22222228;
+                        }
+
+                        >.ad-prev {
+                            padding-right: 4px;
+                        }
+
+                        >.ad-next {
+                            right: -25px;
+                            padding-left: 5px;
+                        }
+
+                        >div:hover {
+                            background-color: #a3a3a3;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    >.ad_hidden {
+                        width: 820px;
+                        height: 320px;
+                        overflow: hidden;
+                        position: relative;
+                        left: 40px;
+                       
+                        >ul {
+                            width: 140%;
+                            justify-content: space-around;
+                            position: absolute;
+                            left: 40px;
+
+                            >li {
+                                width: 155px;
+
+                                >input {
+                                    position: relative;
+                                    top: 17px;
+                                    left: -20px;
+                                }
+
+                                >.adimg {
+                                    >a {
+
+                                        width: 120px;
+                                        height: 150px;
+                                       border:1px solid #eee;
+                                        align-items: center;
+
+                                        >img {
+                                            width: 118px;
+                                            height: 110px;
+                                        }
+                                    }
+                                }
+
+                                >h4 {
+                                    font-weight: lighter;
+                                    height: 50px;
+                                    width: 123px;
+                                    margin-top: 11px;
+                                    font-size: 15px;
+                                }
+
+                                >p {
+                                    width: 123px;
+                                    font-size: 15px;
+                                    font-family: 'LINESeedKR-Bd';
+                                    text-align: center;
+                                    line-height: 30px;
+                                }
+
+                                >span {
+                                    display: inline-block;
+                                    width: 30px;
+                                    font-size: 12px;
+                                    margin-left: 25px;
+                                }
+
+                                >.sale {
+                                    color: tomato;
+                                    font-weight: bold;
+                                }
+
+                                >.no {
+                                    margin-left: 10px;
+                                }
+
+                            }
+                        }
+                    }
+           
+                }
+            }
+            >.buy_kind2{
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                      
+            }
+
+        }
+    }
+} 
+#buy_series {
+    width: 100%;
+    height: 450px;
+    position: relative;
+  
+
+    >.ser_box {
+        width: 1130px;
+        height: 100%;
+        margin: 0 auto;
+       
+
+        
+
+        >.ser-all {
+            width: 1903px;
+             height: 364px;
+            padding: 20px 0;
+            position: absolute;
+            left: 0;
+    
+            >.ser_kind {
+                width: 1130px;
+                height: 370px;
+                  margin: 0 auto;
+                  border-top: 0.5px solid #eee;
+                  border-bottom: 0.5px solid #eee;
+                    padding: 20px 0;           
+
+                >.ser {
+                    width: 250px;
+                    height: 370px;
+                    position: relative;
+                    border-right: 0.5px solid #eee;
+                    top:-20px;
+                    padding: 18px;
+
+                    >h3 {
+                        width: 160px;
+                        height: 50px;
+                        line-height: 25px;
+                        padding: 19px 0 0 0;
+                    }
+                    >a{
+                        display: inline-block;
+                        width: 85px;
+                        height: 25px;
+                        font-size: 11px;
+                        border: 1px solid #eee;
+                        border-radius: 20px;
+                        text-align: center;
+                        line-height: 25px;
+
+                    }
+
+                    >.ch_b {
+                        position: absolute;
+                        top: 198px;
+                        left: 10px;
+
+                        >#ad {
+                            margin-left: 10px;
+                        }
+
+                        >label {
+                            font-size: 13px;
+                            margin-left: 10px;
+
+                        }
+                    }
+
+                    >.ser_bt {
+                        width: 100%;
+                        margin-top: 150px;
+                        justify-content: start;
+
+                        >a {
+                            display: inline-block;
+                            width: 115px;
+                            height: 40px;
+                            line-height: 25px;
+                            border: 0.5px solid #eee;
                             text-align: center;
                             padding-top: 5px;
                             font-size: 13px;
@@ -773,6 +1007,30 @@
 
                             }
 
+                        }
+                        >a:nth-of-type(1){
+                            border-right: none;
+                        }
+                    }
+                    .series_buy{
+                            width: 213px;
+                            height: 45px;
+                            >button {
+                                width: 100%;
+                                height: 100%;
+                                border: 1px solid transparent;
+                                background-color: transparent;
+                                font-size: 17px;
+                                font-family: 'LINESeedKR-Bd';
+                                color: #222222;
+                                background-color: rgba(37, 20, 68, 0.849);
+                                color: #eee;
+                                box-shadow: 1px 1px 10px #2222225e;
+                    
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                           
                         }
                     }
                 }
@@ -821,7 +1079,7 @@
 
                         >ul {
                             width: 140%;
-                            justify-content: space-around;
+                            justify-content:start;
                             margin-left: 40px;
 
                             >li {
@@ -833,37 +1091,39 @@
                                     left: -20px;
                                 }
 
-                                >.adimg {
+                                >.se-img {
                                     >a {
 
                                         width: 120px;
                                         height: 150px;
-                                        @include border;
+                                       border:1px solid #eee;;
                                         align-items: center;
 
                                         >img {
                                             width: 118px;
-                                            height: 130px;
+                                            height: 150px;
                                         }
                                     }
+                                    >h4 {
+                                        font-weight: lighter;
+                                        height: 50px;
+                                        width: 123px;
+                                        margin-top: 11px;
+                                        font-size: 15px;
+                                    }
+    
+                                    >p {
+                                        width: 123px;
+                                        font-size: 15px;
+                                        font-family: 'LINESeedKR-Bd';
+                                        text-align: center;
+                                        line-height: 30px;
+                                        margin-top: 18px;
+                                    }
+    
                                 }
 
-                                >h4 {
-                                    font-weight: lighter;
-                                    height: 50px;
-                                    width: 123px;
-                                    margin-top: 11px;
-                                    font-size: 15px;
-                                }
-
-                                >p {
-                                    width: 123px;
-                                    font-size: 15px;
-                                    font-family: 'LINESeedKR-Bd';
-                                    text-align: center;
-                                    line-height: 30px;
-                                }
-
+                               
                                 >span {
                                     display: inline-block;
                                     width: 30px;
@@ -888,4 +1148,68 @@
 
         }
     }
+} 
+#benner{
+    width: 1130px;
+    height: 155px;
+    margin: 0 auto;
+    justify-content: space-between;
+    >.ben1{
+        width: 550px;
+        height: 100px;
+        >img{
+            width: 100%;
+            height: 100%            
+        }
+    }
+    >.ben2{
+        width: 550px;
+        height: 100px;
+        >img{
+            width: 100%;
+            height: 100%            
+        }
+    }
 }
+#event{
+    width: 1130px;
+    height: 215px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    >h3{
+        margin-bottom: 20px;
+    }
+    >.event_box{
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+        >.event_img{
+            >img{
+                width: 220px;
+                height: 100px
+            };
+        }
+        >.event_text{
+            width: 870px;
+            height: 100px;
+            >h3{
+                margin-top: 5px;
+            }
+            >p{
+                line-height: 40px;
+                font-size: 13px;
+            }
+            >span{
+                font-size: 11px;
+                color: #8f8f8f;
+            }
+        }
+    }
+    >a{
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        font-size: 13px;
+        text-align: right;
+    }
+} 
