@@ -7,1104 +7,866 @@
 @mixin border {
     border: 1px solid #eee;
 }
+#wrap{
+    width: 100%;
+    height: auto;
 
-#catalog {
-    width: 1130px;
-    height: 105px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 140;
-    justify-content: space-between;
+    #catalog {
+        width: 1130px;
+        height: 105px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 140;
+        justify-content: space-between;
 
-    >ul {
-        width: 30%;
-        height: 100%;
-        justify-content: space-around;
-        text-align: center;
-        color: #c2c2c2;
-
-        >li {
-            width: 111px;
-            line-height: 80px;
-            font-size: 12px;
-
-        }
-
-        >li:nth-of-type(1) {
-            width: 30px;
-        }
-
-        >li:nth-of-type(2) {
-            width: 80px;
-        }
-
-        >li:nth-of-type(3) {
-            width: 95px;
-        }
-
-        >li:nth-of-type(4) {
-            width: 60px;
-        }
-
-        >li:nth-of-type(5) {
-            width: 110px;
-        }
-
-        >li:nth-of-type(6) {
-            width: 85px;
-        }
-    }
-
-    >a {
-        display: inline-block;
-        width: 100%;
-        height: 80%;
-        position: absolute;
-        top: 0;
-
-        >img {
-            width: 100%;
+        >ul {
+            width: 30%;
             height: 100%;
+            justify-content: space-around;
+            text-align: center;
+            color: #c2c2c2;
 
+            >li {
+                width: 111px;
+                line-height: 80px;
+                font-size: 12px;
+
+            }
+
+            >li:nth-of-type(1) {
+                width: 30px;
+            }
+
+            >li:nth-of-type(2) {
+                width: 80px;
+            }
+
+            >li:nth-of-type(3) {
+                width: 95px;
+            }
+
+            >li:nth-of-type(4) {
+                width: 60px;
+            }
+
+            >li:nth-of-type(5) {
+                width: 110px;
+            }
+
+            >li:nth-of-type(6) {
+                width: 85px;
+            }
         }
-
-
-    }
-
-    >#btn_box {
-        width: 80px;
-        height: 90px;
-        line-height: 110px;
 
         >a {
             display: inline-block;
-            width: 30px;
-            height: 30px;
-        }
-
-    }
-
-    .good {
-        background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/share.png') no-repeat left 1px;
-
-    }
-
-    .whis {
-        background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/keep_m.png') no-repeat left 1px;
-
-    }
-}
-
-#book_kind {
-    width: 1130px;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    z-index: 11;
-    justify-content: space-between;
-
-    >.book_img_b {
-        width: 480px;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        >.book_img {
-            width: 500px;
-            align-self: center;
-            margin-top: 30px;
-
-            >.b_img {
-                text-align: center;
-
-                >img {
-                    display: inline-block;
-                    width: 345px;
-                    height: 450px;
-                    box-shadow: 5px 5px 25px #c2c2c2;
-                    vertical-align: super;
-                    ;
-                }
-
-            }
-
-            .book_text {
-                width: 100%;
-                height: 88px;
-                margin-top: 50px;
-                text-align: center;
-                font-size: 12px;
-
-                >a {
-                    display: inline-block;
-                    width: 90px;
-                    font-size: 12px;
-                    line-height: 25px;
-                    background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/book_3.png') no-repeat left 0;
-                    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
-                    margin-left: 20px;
-                    color: #a3a3a3;
-                }
-
-                >p {
-                    line-height: 35px;
-                    font-size: 13px;
-                    color: #222222;
-
-                }
-
-                >.p_img {
-                    background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/best.png') no-repeat left 0;
-                    width: 188px;
-                    margin: 0 auto;
-                    line-height: 18px;
-                    padding-left: 28px;
-                    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
-
-                }
-            }
-
-            .review_star {
-                width: 100%;
-                height: 90px;
-                text-align: center;
-                font-size: 13px;
-                line-height: 23px;
-
-                >img {
-                    width: 127px;
-                    height: 23px;
-                }
-
-                >a {
-                    display: block;
-                    color: #a3a3a3;
-                }
-            }
-
-
-        }
-    }
-
-    >.sell {
-        width: 580px;
-        height: auto;
-
-
-
-        >.title {
             width: 100%;
-            height: 130px;
-            border-bottom: 1px solid #eee;
+            height: 80%;
+            position: absolute;
+            top: 0;
 
-            >h3 {
-                margin-bottom: 20px;
-            }
-
-            >p {
-                font-size: 12px;
-                color: #c2c2c2;
-            }
-
-            >.int_B {
-                >a {
-                    display: block;
-
-                    border-radius: 100px;
-
-                    color: #222222;
-                    text-align: center;
-                    font-size: 12px;
-                    margin: 20px 10px 0 0;
-                }
-
-                >.in1 {
-                    width: 80px;
-                    height: 30px;
-                    line-height: 30px;
-                    background-color: rgb(249, 238, 252);
-                }
-
-                >.in2 {
-                    width: 110px;
-                    height: 30px;
-                    line-height: 30px;
-                    background-color: rgb(249, 238, 252);
-                }
-
-                >.in3 {
-                    width: 115px;
-                    height: 30px;
-                    line-height: 30px;
-                    border: 1px solid #eee;
-                }
-
-                >.in4 {
-                    width: 60px;
-                    height: 30px;
-                    line-height: 30px;
-                    border: 1px solid #e2e2e27a;
-                }
-            }
-        }
-
-        .bc {
-            width: 100%;
-            height: 160px;
-            align-items: center;
-            margin-top: 15px;
-            border-bottom: 1px solid #eee;
-
-            >.bc_ti {
-                width: 100px;
-                height: 100px;
-
-                >a {
-                    width: 48px;
-                    height: 20px;
-                    display: block;
-                    font-size: 11px;
-                    background-color: #222222;
-                    border-radius: 6px;
-                    color: #eee;
-                    margin-top: 10px;
-                    margin-left: 3.5px;
-                    text-align: center;
-                    line-height: 20px;
-                }
-            }
-
-            >.sec {
-                >select {
-                    width: 473px;
-                    height: 40px;
-                    margin-bottom: 15px;
-                    border: 1px solid #eee;
-
-                }
-
-                >.tex {
-                    >p {
-                        font-size: 12px;
-                        color: #a3a3a3;
-                        line-height: 20px;
-                    }
-
-                }
-            }
-        }
-    }
-
-    .Benefit {
-        width: 100%;
-        height: 80px;
-        align-items: center;
-        border-bottom: 1px solid #eee;
-
-        >.bene {
-            width: 85px;
-
-            >h4 {
-                line-height: 30px;
-            }
-        }
-
-
-        >.be_t {
-
-
-            >p {
-
-                height: 26px;
-                border: 1px solid #eee;
-                font-size: 11px;
-                border-radius: 9px;
-                margin: 0 10px;
-                text-align: center;
-                line-height: 29px;
-                padding-left: 16px;
+            >img {
+                width: 100%;
+                height: 100%;
 
             }
 
-            >.be1 {
-                width: 65px;
-                background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_2.png') no-repeat 10px 9px;
-
-
-            }
-
-            >.be2 {
-                width: 82px;
-                background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_5.png') no-repeat 10px 7px;
-
-            }
-
-            >.be3 {
-                width: 63px;
-                background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_3.png') no-repeat 10px 6px;
-            }
-        }
-    }
-
-    .count-num {
-        width: 100%;
-        height: 90px;
-        align-items: center;
-
-        .count_t {
-            width: 95px;
-        }
-
-        .price-count {
-            width: 200px;
-            margin-top: 5px;
-
-            >button {
-                border: none;
-
-            }
-
-
-
-            .ma {
-                background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_minus.png') no-repeat 2px 0px;
-                background-size: 32px;
-                width: 33px;
-                height: 33px;
-
-            }
-
-            >input {
-                width: 55px;
-                height: 32px;
-                border: 1px solid #eee;
-                text-align: center;
-
-                &:focus {
-                    outline: none;
-                }
-
-            }
-
-            .pl {
-                background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_plus.png') no-repeat -1px 0;
-                background-size: 32px;
-                width: 33px;
-                height: 33px;
-
-
-            }
-        }
-
-        .disc {
-            width: 280px;
-            justify-content: flex-end;
-
-            >span {
-                font-size: 20px;
-                color: #7777778e;
-                text-decoration: line-through;
-                margin-top: 69px;
-            }
-        }
-
-    }
-
-    .discount_price {
-        width: 100%;
-        height: 57px;
-
-        justify-content: flex-end;
-        margin-top: 10px;
-
-        >p {
-            width: 65px;
-            height: 50px;
-
-            line-height: 50px;
-            text-align: center;
-            font-family: 'LINESeedKR-Bd';
-        }
-
-        >span {
-            width: auto;
-            height: 50px;
-            font-size: 35px;
-
-            font-family: 'LINESeedKR-Bd';
-            text-align: right;
 
         }
 
-    }
-
-    .d-te {
-        width: 100%;
-        height: 30px;
-        justify-content: flex-end;
-
-        .ga::before {
-            content: "적립";
-            display: inline-block;
-            width: 35px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            border-radius: 30px;
-            font-size: 11px;
-            background-color: tomato;
-            color: #FFFFFF;
-
-        }
-
-        .ga::after {
-            content: "적립금 975원";
-            display: inline-block;
+        >#btn_box {
             width: 80px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            border-radius: 30px;
-            font-size: 11px;
-
-            color: tomato;
-
-        }
-
-        .gi::after {
-            content: "(5%)";
-            display: inline-block;
-            width: 30px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            border-radius: 30px;
-            font-size: 11px;
-            color: #222222;
-
-        }
-    }
-
-    .sell_btn {
-        width: 100%;
-        height: 50px;
-        margin-top: 20px;
-
-        >button {
-            width: 50%;
-            height: 100%;
-            border: 1px solid #eee;
-            background-color: transparent;
-            font-size: 17px;
-            font-family: 'LINESeedKR-Bd';
-            color: #222222;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-      
-
-        .buy {
-            background-color: rgba(37, 20, 68, 0.849);
-            color: #eee;
-            box-shadow: 1px 1px 10px #2222225e;
-            border: 0.5px solid transparent;
-        }
-    }
-
-    .in-b {
-        width: 100%;
-        height: 107px;
-
-        margin-top: 25px;
-        border: 1px solid #eee;
-        padding: 25px;
-        border-radius: 5px;
-        color: #b9b9b93b;
-
-        >.in-t {
-            width: 95px;
-            font-size: 12px;
-
-            >p {
-                height: 20px
-            }
-
-            ;
-        }
-
-        >.in-t2 {
-            font-size: 12px;
-
-            >p {
-                height: 20px;
-            }
-        }
-    }
-
-}
-
-#review {
-    width: 1130px;
-    height: 200px;
-    margin: 0 auto;
-
-    >#re_a_box {
-        border: 1px solid #eee;
-        position: relative;
-        padding: 20px;
-        margin: 80px 0;
-
-        >.re_te {
-            width: 100%;
-            height: 33px;
-            line-height: 25px;
-
-            >p {
-                font-family: 'LINESeedKR-Bd';
-            }
+            height: 90px;
+            line-height: 110px;
 
             >a {
                 display: inline-block;
-                width: 100px;
-
-                font-size: 11px;
-                text-align: center;
-
+                width: 30px;
+                height: 30px;
             }
 
         }
 
-        >.re-bt {
+        .good {
+            background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/share.png') no-repeat left 1px;
 
-            >div {
-                width: 40px;
-                height: 40px;
-                font-size: 20px;
-                line-height: 40px;
-                border: 1px solid transparent;
-                color: #a3a3a350;
-                text-align: center;
-                border-radius: 50%;
-                position: absolute;
-                top: 80px;
-                background-color: #ffffff;
-                cursor: pointer;
-                box-shadow: 1px 1px 10px #22222228;
-            }
+        }
 
-            >div:hover {
-                background-color: #a3a3a3;
-                color: #FFFFFF;
-            }
+        .whis {
+            background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/keep_m.png') no-repeat left 1px;
 
-            .prev {
-                left: -56px;
+        }
+    }
 
-            }
+    #book_kind {
+        width: 1130px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        z-index: 11;
+        justify-content: space-between;
 
-            .next {
-                right: -56px;
-                padding-left: 5px;
+        >.book_img_b {
+            width: 480px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            >.book_img {
+                width: 500px;
+                align-self: center;
+                margin-top: 30px;
+
+                >.b_img {
+                    text-align: center;
+
+                    >img {
+                        display: inline-block;
+                        width: 345px;
+                        height: 450px;
+                        box-shadow: 5px 5px 25px #c2c2c2;
+                        vertical-align: super;
+                        ;
+                    }
+
+                }
+
+                .book_text {
+                    width: 100%;
+                    height: 88px;
+                    margin-top: 50px;
+                    text-align: center;
+                    font-size: 12px;
+
+                    >a {
+                        display: inline-block;
+                        width: 90px;
+                        font-size: 12px;
+                        line-height: 25px;
+                        background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/book_3.png') no-repeat left 0;
+                        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+                        margin-left: 20px;
+                        color: #a3a3a3;
+                    }
+
+                    >p {
+                        line-height: 35px;
+                        font-size: 13px;
+                        color: #222222;
+
+                    }
+
+                    >.p_img {
+                        background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/best.png') no-repeat left 0;
+                        width: 188px;
+                        margin: 0 auto;
+                        line-height: 18px;
+                        padding-left: 28px;
+                        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+
+                    }
+                }
+
+                .review_star {
+                    width: 100%;
+                    height: 90px;
+                    text-align: center;
+                    font-size: 13px;
+                    line-height: 23px;
+
+                    >img {
+                        width: 127px;
+                        height: 23px;
+                    }
+
+                    >a {
+                        display: block;
+                        color: #a3a3a3;
+                    }
+                }
+
+
             }
         }
 
-        >.re_box {
-            width: 1100px;
-            height: 66%;
-            overflow: hidden;
-
-            >.re_hidden {
-                width: 500%;
-                height: 100%;
-
-                >.rev-b {
-                    width: 1088px;
-                    height: 100%;
+        >.sell {
+            width: 580px;
+            height: auto;
 
 
-                    >div {
-                        width: 50%;
-                        height: 100%;
 
-                        >.r-img {
-                            >img {
-                                width: 130px;
-                                height: 130px;
-                            }
-                        }
+            >.title {
+                width: 100%;
+                height: 130px;
+                border-bottom: 1px solid #eee;
 
-                        >.r-t {
-                            width: 66%;
-                            height: 104px;
+                >h3 {
+                    margin-bottom: 20px;
+                }
 
-                            >ul {
-                                font-size: 12px;
+                >p {
+                    font-size: 12px;
+                    color: #c2c2c2;
+                }
 
-                                >li {
-                                    line-height: 30px;
-                                }
-                            }
+                >.int_B {
+                    >a {
+                        display: block;
 
-                            >p {
-                                font-size: 14px;
-                                line-height: 30px;
-                                font-family: 'LINESeedKR-Bd';
-                            }
+                        border-radius: 100px;
 
-                            >span {
-                                font-size: 12px;
-                                line-height: 30px;
-                            }
-                        }
+                        color: #222222;
+                        text-align: center;
+                        font-size: 12px;
+                        margin: 20px 10px 0 0;
                     }
 
-                    .rev1 {
-                        justify-content: space-around;
+                    >.in1 {
+                        width: 80px;
+                        height: 30px;
+                        line-height: 30px;
+                        background-color: rgb(249, 238, 252);
                     }
 
-                    .rev2 {
-                        justify-content: space-around;
+                    >.in2 {
+                        width: 110px;
+                        height: 30px;
+                        line-height: 30px;
+                        background-color: rgb(249, 238, 252);
+                    }
+
+                    >.in3 {
+                        width: 115px;
+                        height: 30px;
+                        line-height: 30px;
+                        border: 1px solid #eee;
+                    }
+
+                    >.in4 {
+                        width: 60px;
+                        height: 30px;
+                        line-height: 30px;
+                        border: 1px solid #e2e2e27a;
+                    }
+                }
+            }
+
+            .bc {
+                width: 100%;
+                height: 160px;
+                align-items: center;
+                margin-top: 15px;
+                border-bottom: 1px solid #eee;
+
+                >.bc_ti {
+                    width: 100px;
+                    height: 100px;
+
+                    >a {
+                        width: 48px;
+                        height: 20px;
+                        display: block;
+                        font-size: 11px;
+                        background-color: #222222;
+                        border-radius: 6px;
+                        color: #eee;
+                        margin-top: 10px;
+                        margin-left: 3.5px;
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                }
+
+                >.sec {
+                    >select {
+                        width: 473px;
+                        height: 40px;
+                        margin-bottom: 15px;
+                        border: 1px solid #eee;
+
+                    }
+
+                    >.tex {
+                        >p {
+                            font-size: 12px;
+                            color: #a3a3a3;
+                            line-height: 20px;
+                        }
+
                     }
                 }
             }
         }
-    }
 
-}
-
-.active{
-    background-color: #dbdbdb31;
-
-}
-.dp{
-    opacity: 1!important;
-}
-
-
-#buy_list {
-    width: 100%;
-    height: 450px;
-    position: relative;
-    margin: 80px 0 0 0;
-
-    >.buy_box {
-        width: 1130px;
-        height: 100%;
-        margin: 0 auto;
-       
-
-        >ul {
+        .Benefit {
             width: 100%;
-            height: 50px;
+            height: 80px;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+
+            >.bene {
+                width: 85px;
+
+                >h4 {
+                    line-height: 30px;
+                }
+            }
 
 
-            >li {
+            >.be_t {
+
+
+                >p {
+
+                    height: 26px;
+                    border: 1px solid #eee;
+                    font-size: 11px;
+                    border-radius: 9px;
+                    margin: 0 10px;
+                    text-align: center;
+                    line-height: 29px;
+                    padding-left: 16px;
+
+                }
+
+                >.be1 {
+                    width: 65px;
+                    background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_2.png') no-repeat 10px 9px;
+
+
+                }
+
+                >.be2 {
+                    width: 82px;
+                    background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_5.png') no-repeat 10px 7px;
+
+                }
+
+                >.be3 {
+                    width: 63px;
+                    background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/badges/icon_3.png') no-repeat 10px 6px;
+                }
+            }
+        }
+
+        .count-num {
+            width: 100%;
+            height: 90px;
+            align-items: center;
+
+            .count_t {
+                width: 95px;
+            }
+
+            .price-count {
                 width: 200px;
-                height: 100%;
+                margin-top: 5px;
+
+                >button {
+                    border: none;
+
+                }
+
+
+
+                .ma {
+                    background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_minus.png') no-repeat 2px 0px;
+                    background-size: 32px;
+                    width: 33px;
+                    height: 33px;
+
+                }
+
+                >input {
+                    width: 55px;
+                    height: 32px;
+                    border: 1px solid #eee;
+                    text-align: center;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                }
+
+                .pl {
+                    background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_plus.png') no-repeat -1px 0;
+                    background-size: 32px;
+                    width: 33px;
+                    height: 33px;
+
+
+                }
+            }
+
+            .disc {
+                width: 280px;
+                justify-content: flex-end;
+
+                >span {
+                    font-size: 20px;
+                    color: #7777778e;
+                    text-decoration: line-through;
+                    margin-top: 69px;
+                }
+            }
+
+        }
+
+        .discount_price {
+            width: 100%;
+            height: 57px;
+
+            justify-content: flex-end;
+            margin-top: 10px;
+
+            >p {
+                width: 65px;
+                height: 50px;
+
                 line-height: 50px;
                 text-align: center;
                 font-family: 'LINESeedKR-Bd';
-                border: 1px solid #eee;
-                border-bottom: none;
-                cursor: pointer;   
-                font-size: 14px;             
+            }
+
+            >span {
+                width: auto;
+                height: 50px;
+                font-size: 35px;
+
+                font-family: 'LINESeedKR-Bd';
+                text-align: right;
+
+            }
+
+        }
+
+        .d-te {
+            width: 100%;
+            height: 30px;
+            justify-content: flex-end;
+
+            .ga::before {
+                content: "적립";
+                display: inline-block;
+                width: 35px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 30px;
+                font-size: 11px;
+                background-color: tomato;
+                color: #FFFFFF;
+
+            }
+
+            .ga::after {
+                content: "적립금 975원";
+                display: inline-block;
+                width: 80px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 30px;
+                font-size: 11px;
+
+                color: tomato;
+
+            }
+
+            .gi::after {
+                content: "(5%)";
+                display: inline-block;
+                width: 30px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 30px;
+                font-size: 11px;
+                color: #222222;
+
             }
         }
 
-        >.buy-all {
-            width: 1903px;
-             height: 330px;
-             background: #dbdbdb31;
-            position: absolute;
-            left: 0;
-            >.buy_kind {
-                width: 100%;
-                height: 320px;
-                transform: translate(20.5%, 13px);
-                position: relative;
-              
+        .sell_btn {
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
 
-                
+            >button {
+                width: 50%;
+                height: 100%;
+                border: 1px solid #eee;
+                background-color: transparent;
+                font-size: 17px;
+                font-family: 'LINESeedKR-Bd';
+                color: #222222;
 
-                >.adon {
-                    width: 250px;
-                    height: 100%;
-                    position: relative;
-                    padding: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        
 
+            .buy {
+                background-color: rgba(37, 20, 68, 0.849);
+                color: #eee;
+                box-shadow: 1px 1px 10px #2222225e;
+                border: 0.5px solid transparent;
+            }
+        }
 
+        .in-b {
+            width: 100%;
+            height: 107px;
 
-                    >h3 {
-                        width: 160px;
-                        height: 100px;
-                        line-height: 25px;
-                        padding: 19px 0;
-                    }
+            margin-top: 25px;
+            border: 1px solid #eee;
+            padding: 25px;
+            border-radius: 5px;
+            color: #b9b9b93b;
 
-                    >.ch_b {
-                        position: absolute;
-                        top: 194px;
-                        left: 6px;
+            >.in-t {
+                width: 95px;
+                font-size: 12px;
 
-                        >#ad {
-                            margin-left: 10px;
-                        }
-
-                        >label {
-                            font-size: 13px;
-                            margin-left: 10px;
-
-                        }
-                    }
-
-                    >.ad_bt {
-                        width: 100%;
-                        margin-top: 125px;
-                        justify-content: start;
-
-                        >a {
-                            display: inline-block;
-                            width: 115px;
-                            height: 40px;
-                            line-height: 25px;
-                            border: 0.5px solid #eee;
-                            text-align: center;
-                            padding-top: 5px;
-                            font-size: 13px;
-                       
-                            >img {
-                                width: 15px;
-                                height: 15px;
-                                margin-left: -10px;
-                                margin-right: 10px;
-                                margin-bottom: -4px;
-
-                            }
-
-                        }
-                        >.b-no{
-                            border-right: none;
-                        }
-                    }
+                >p {
+                    height: 20px
                 }
 
-                >.ad_chk {
-                    width: 880px;
-                    height: 320px;
-                    position: relative;
+                ;
+            }
 
-                    >.adchk-bt {
+            >.in-t2 {
+                font-size: 12px;
+
+                >p {
+                    height: 20px;
+                }
+            }
+        }
+
+    }
+
+    #review {
+        width: 1130px;
+        height: 200px;
+        margin: 0 auto;
+
+        >#re_a_box {
+            border: 1px solid #eee;
+            position: relative;
+            padding: 20px;
+            margin: 80px 0;
+
+            >.re_te {
+                width: 100%;
+                height: 33px;
+                line-height: 25px;
+
+                >p {
+                    font-family: 'LINESeedKR-Bd';
+                }
+
+                >a {
+                    display: inline-block;
+                    width: 100px;
+
+                    font-size: 11px;
+                    text-align: center;
+
+                }
+
+            }
+
+            >.re-bt {
+
+                >div {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    line-height: 40px;
+                    border: 1px solid transparent;
+                    color: #a3a3a350;
+                    text-align: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 80px;
+                    background-color: #ffffff;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 10px #22222228;
+                }
+
+                >div:hover {
+                    background-color: #a3a3a3;
+                    color: #FFFFFF;
+                }
+
+                .prev {
+                    left: -56px;
+
+                }
+
+                .next {
+                    right: -56px;
+                    padding-left: 5px;
+                }
+            }
+
+            >.re_box {
+                width: 1100px;
+                height: 66%;
+                overflow: hidden;
+
+                >.re_hidden {
+                    width: 500%;
+                    height: 100%;
+
+                    >.rev-b {
+                        width: 1088px;
+                        height: 100%;
+
+
                         >div {
-                            width: 40px;
-                            height: 40px;
-                            font-size: 20px;
-                            line-height: 40px;
-                            border: 1px solid transparent;
-                            color: #a3a3a350;
-                            text-align: center;
-                            border-radius: 50%;
-                            position: absolute;
-                            top: 80px;
-                            background-color: #ffffff;
-                            cursor: pointer;
-                            box-shadow: 1px 1px 10px #22222228;
-                        }
+                            width: 50%;
+                            height: 100%;
 
-                        >.ad-prev {
-                            padding-right: 4px;
-                        }
-
-                        >.ad-next {
-                            right: -25px;
-                            padding-left: 5px;
-                        }
-
-                        >div:hover {
-                            background-color: #a3a3a3;
-                            color: #FFFFFF;
-                        }
-                    }
-
-                    >.ad_hidden {
-                        width: 820px;
-                        height: 320px;
-                        overflow: hidden;
-                        position: relative;
-                        left: 40px;
-                       
-                        >ul {
-                            width: 140%;
-                            justify-content: space-around;
-                            position: absolute;
-                            left: 40px;
-
-                            >li {
-                                width: 155px;
-
-                                >input {
-                                    position: relative;
-                                    top: 17px;
-                                    left: -20px;
+                            >.r-img {
+                                >img {
+                                    width: 130px;
+                                    height: 130px;
                                 }
+                            }
 
-                                >.adimg {
-                                    >a {
+                            >.r-t {
+                                width: 66%;
+                                height: 104px;
 
-                                        width: 120px;
-                                        height: 150px;
-                                       border:1px solid #eee;
-                                        align-items: center;
+                                >ul {
+                                    font-size: 12px;
 
-                                        >img {
-                                            width: 118px;
-                                            height: 110px;
-                                        }
+                                    >li {
+                                        line-height: 30px;
                                     }
-                                }
-
-                                >h4 {
-                                    font-weight: lighter;
-                                    height: 50px;
-                                    width: 123px;
-                                    margin-top: 11px;
-                                    font-size: 15px;
                                 }
 
                                 >p {
-                                    width: 123px;
-                                    font-size: 15px;
-                                    font-family: 'LINESeedKR-Bd';
-                                    text-align: center;
+                                    font-size: 14px;
                                     line-height: 30px;
+                                    font-family: 'LINESeedKR-Bd';
                                 }
 
                                 >span {
-                                    display: inline-block;
-                                    width: 30px;
                                     font-size: 12px;
-                                    margin-left: 25px;
+                                    line-height: 30px;
                                 }
-
-                                >.sale {
-                                    color: tomato;
-                                    font-weight: bold;
-                                }
-
-                                >.no {
-                                    margin-left: 10px;
-                                }
-
                             }
                         }
+
+                        .rev1 {
+                            justify-content: space-around;
+                        }
+
+                        .rev2 {
+                            justify-content: space-around;
+                        }
                     }
-           
                 }
             }
-            >.buy_kind2{
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                      
-            }
-
         }
+
     }
-} 
-#buy_series {
-    width: 100%;
-    height: 450px;
-    position: relative;
-  
 
-    >.ser_box {
-        width: 1130px;
-        height: 100%;
-        margin: 0 auto;
-       
+    .active{
+        background-color: #dbdbdb31;
 
+    }
+    .dp{
+        opacity: 1!important;
+    }
+
+
+    #buy_list {
+        width: 100%;
+        height: 450px;
+        position: relative;
+        margin: 80px 0 0 0;
+
+        >.buy_box {
+            width: 1130px;
+            height: 100%;
+            margin: 0 auto;
         
 
-        >.ser-all {
-            width: 1903px;
-             height: 364px;
-            padding: 20px 0;
-            position: absolute;
-            left: 0;
-    
-            >.ser_kind {
-                width: 1130px;
-                height: 350px;
-                  margin: 0 auto;
-                  border-top: 0.5px solid #eee;
-                  border-bottom: 0.5px solid #eee;
-                    padding: 10px 0;           
+            >ul {
+                width: 100%;
+                height: 50px;
 
-                >.ser {
-                    width: 250px;
-                    height: 350px;
+
+                >li {
+                    width: 200px;
+                    height: 100%;
+                    line-height: 50px;
+                    text-align: center;
+                    font-family: 'LINESeedKR-Bd';
+                    border: 1px solid #eee;
+                    border-bottom: none;
+                    cursor: pointer;   
+                    font-size: 14px;             
+                }
+            }
+
+            >.buy-all {
+                width: 1903px;
+                height: 330px;
+                background: #dbdbdb31;
+                position: absolute;
+                left: 0;
+                >.buy_kind {
+                    width: 100%;
+                    height: 320px;
+                    transform: translate(20.5%, 13px);
                     position: relative;
-                    border-right: 0.5px solid #eee;
-                    top:-11px;
-                    padding: 18px;
+                
 
-                    >h3 {
-                        width: 160px;
-                        height: 50px;
-                        line-height: 25px;
-                   
-                    }
-                    >a{
-                        display: inline-block;
-                        width: 85px;
-                        height: 25px;
-                        font-size: 11px;
-                        border: 1px solid #eee;
-                        border-radius: 20px;
-                        text-align: center;
-                        line-height: 25px;
+                    
 
-                    }
+                    >.adon {
+                        width: 250px;
+                        height: 100%;
+                        position: relative;
+                        padding: 15px;
 
-                    >.ch_b {
-                        position: absolute;
-                        top: 198px;
-                        left: 10px;
 
-                        >#ad {
-                            margin-left: 10px;
-                        }
 
-                        >label {
-                            font-size: 13px;
-                            margin-left: 10px;
-
-                        }
-                    }
-
-                    >.ser_bt {
-                        width: 100%;
-                        margin-top: 150px;
-                        justify-content: start;
-
-                        >a {
-                            display: inline-block;
-                            width: 115px;
-                            height: 40px;
+                        >h3 {
+                            width: 160px;
+                            height: 100px;
                             line-height: 25px;
-                            border: 0.5px solid #eee;
-                            text-align: center;
-                            padding-top: 5px;
-                            font-size: 13px;
+                            padding: 19px 0;
+                        }
 
-                            >img {
-                                width: 15px;
-                                height: 15px;
-                                margin-left: -10px;
-                                margin-right: 10px;
-                                margin-bottom: -4px;
+                        >.ch_b {
+                            position: absolute;
+                            top: 194px;
+                            left: 6px;
 
+                            >#ad {
+                                margin-left: 10px;
                             }
 
+                            >label {
+                                font-size: 13px;
+                                margin-left: 10px;
+
+                            }
                         }
-                        >a:nth-of-type(1){
-                            border-right: none;
-                        }
-                    }
-                    .series_buy{
-                            width: 213px;
-                            height: 45px;
-                            >button {
-                                width: 100%;
-                                height: 100%;
-                                border: 1px solid transparent;
-                                background-color: transparent;
-                                font-size: 17px;
-                                font-family: 'LINESeedKR-Bd';
-                                color: #222222;
-                                background-color: rgba(37, 20, 68, 0.849);
-                                color: #eee;
-                                box-shadow: 1px 1px 10px #2222225e;
-                    
-                                &:hover {
-                                    cursor: pointer;
+
+                        >.ad_bt {
+                            width: 100%;
+                            margin-top: 125px;
+                            justify-content: start;
+
+                            >a {
+                                display: inline-block;
+                                width: 115px;
+                                height: 40px;
+                                line-height: 25px;
+                                border: 0.5px solid #eee;
+                                text-align: center;
+                                padding-top: 5px;
+                                font-size: 13px;
+                        
+                                >img {
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-left: -10px;
+                                    margin-right: 10px;
+                                    margin-bottom: -4px;
+
                                 }
-                           
-                        }
-                    }
-                }
 
-                >.ad_chk {
-                    width: 880px;
-                    height: 320px;
-                    position: relative;
-
-                    >.adchk-bt {
-                        >div {
-                            width: 40px;
-                            height: 40px;
-                            font-size: 20px;
-                            line-height: 40px;
-                            border: 1px solid transparent;
-                            color: #a3a3a350;
-                            text-align: center;
-                            border-radius: 50%;
-                            position: absolute;
-                            top: 80px;
-                            background-color: #ffffff;
-                            cursor: pointer;
-                            box-shadow: 1px 1px 10px #22222228;
-                        }
-
-                        >.ad-prev {
-                            padding-right: 4px;
-                        }
-
-                        >.ad-next {
-                            right: -25px;
-                            padding-left: 5px;
-                        }
-
-                        >div:hover {
-                            background-color: #a3a3a3;
-                            color: #FFFFFF;
+                            }
+                            >.b-no{
+                                border-right: none;
+                            }
                         }
                     }
 
-                    >.ad_hidden {
-                        width: 860px;
+                    >.ad_chk {
+                        width: 880px;
                         height: 320px;
-                        overflow: hidden;
+                        position: relative;
 
-                        >ul {
-                            width: 140%;
-                            justify-content:start;
-                            margin-left: 40px;
+                        >.adchk-bt {
+                            >div {
+                                width: 40px;
+                                height: 40px;
+                                font-size: 20px;
+                                line-height: 40px;
+                                border: 1px solid transparent;
+                                color: #a3a3a350;
+                                text-align: center;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 80px;
+                                background-color: #ffffff;
+                                cursor: pointer;
+                                box-shadow: 1px 1px 10px #22222228;
+                            }
 
-                            >li {
-                                width: 155px;
+                            >.ad-prev {
+                                padding-right: 4px;
+                            }
 
-                                >input {
-                                    position: relative;
-                                    top: 17px;
-                                    left: -20px;
-                                }
+                            >.ad-next {
+                                right: -25px;
+                                padding-left: 5px;
+                            }
 
-                                >.se-img {
-                                    >a {
+                            >div:hover {
+                                background-color: #a3a3a3;
+                                color: #FFFFFF;
+                            }
+                        }
 
-                                        width: 120px;
-                                        height: 150px;
-                                       border:1px solid #eee;;
-                                        align-items: center;
+                        >.ad_hidden {
+                            width: 820px;
+                            height: 320px;
+                            overflow: hidden;
+                            position: relative;
+                            left: 40px;
+                        
+                            >ul {
+                                width: 140%;
+                                justify-content: space-around;
+                                position: absolute;
+                                left: 40px;
 
-                                        >img {
-                                            width: 118px;
+                                >li {
+                                    width: 155px;
+
+                                    >input {
+                                        position: relative;
+                                        top: 17px;
+                                        left: -20px;
+                                    }
+
+                                    >.adimg {
+                                        >a {
+
+                                            width: 120px;
                                             height: 150px;
+                                        border:1px solid #eee;
+                                            align-items: center;
+
+                                            >img {
+                                                width: 118px;
+                                                height: 110px;
+                                            }
                                         }
                                     }
+
                                     >h4 {
                                         font-weight: lighter;
                                         height: 50px;
@@ -1112,151 +874,613 @@
                                         margin-top: 11px;
                                         font-size: 15px;
                                     }
-    
+
                                     >p {
                                         width: 123px;
                                         font-size: 15px;
                                         font-family: 'LINESeedKR-Bd';
                                         text-align: center;
                                         line-height: 30px;
-                                        margin-top: 18px;
                                     }
+
+                                    >span {
+                                        display: inline-block;
+                                        width: 30px;
+                                        font-size: 12px;
+                                        margin-left: 25px;
+                                    }
+
+                                    >.sale {
+                                        color: tomato;
+                                        font-weight: bold;
+                                    }
+
+                                    >.no {
+                                        margin-left: 10px;
+                                    }
+
+                                }
+                            }
+                        }
+            
+                    }
+                }
+                >.buy_kind2{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                        
+                }
+
+            }
+        }
+    } 
+    #buy_series {
+        width: 100%;
+        height: 450px;
+        position: relative;
     
+
+        >.ser_box {
+            width: 1130px;
+            height: 100%;
+            margin: 0 auto;
+        
+
+            
+
+            >.ser-all {
+                width: 1903px;
+                height: 364px;
+                padding: 20px 0;
+                position: absolute;
+                left: 0;
+        
+                >.ser_kind {
+                    width: 1130px;
+                    height: 350px;
+                    margin: 0 auto;
+                    border-top: 0.5px solid #eee;
+                    border-bottom: 0.5px solid #eee;
+                        padding: 10px 0;           
+
+                    >.ser {
+                        width: 250px;
+                        height: 350px;
+                        position: relative;
+                        border-right: 0.5px solid #eee;
+                        top:-11px;
+                        padding: 18px;
+
+                        >h3 {
+                            width: 160px;
+                            height: 50px;
+                            line-height: 25px;
+                    
+                        }
+                        >a{
+                            display: inline-block;
+                            width: 85px;
+                            height: 25px;
+                            font-size: 11px;
+                            border: 1px solid #eee;
+                            border-radius: 20px;
+                            text-align: center;
+                            line-height: 25px;
+
+                        }
+
+                        >.ch_b {
+                            position: absolute;
+                            top: 198px;
+                            left: 10px;
+
+                            >#ad {
+                                margin-left: 10px;
+                            }
+
+                            >label {
+                                font-size: 13px;
+                                margin-left: 10px;
+
+                            }
+                        }
+
+                        >.ser_bt {
+                            width: 100%;
+                            margin-top: 150px;
+                            justify-content: start;
+
+                            >a {
+                                display: inline-block;
+                                width: 115px;
+                                height: 40px;
+                                line-height: 25px;
+                                border: 0.5px solid #eee;
+                                text-align: center;
+                                padding-top: 5px;
+                                font-size: 13px;
+
+                                >img {
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-left: -10px;
+                                    margin-right: 10px;
+                                    margin-bottom: -4px;
+
                                 }
 
-                               
-                                >span {
-                                    display: inline-block;
-                                    width: 30px;
-                                    font-size: 12px;
-                                    margin-left: 25px;
-                                }
+                            }
+                            >a:nth-of-type(1){
+                                border-right: none;
+                            }
+                        }
+                        .series_buy{
+                                width: 213px;
+                                height: 45px;
+                                >button {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 1px solid transparent;
+                                    background-color: transparent;
+                                    font-size: 17px;
+                                    font-family: 'LINESeedKR-Bd';
+                                    color: #222222;
+                                    background-color: rgba(37, 20, 68, 0.849);
+                                    color: #eee;
+                                    box-shadow: 1px 1px 10px #2222225e;
+                        
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+                            
+                            }
+                        }
+                    }
 
-                                >.sale {
-                                    color: tomato;
-                                    font-weight: bold;
-                                }
+                    >.ad_chk {
+                        width: 880px;
+                        height: 320px;
+                        position: relative;
 
-                                >.no {
-                                    margin-left: 10px;
-                                }
+                        >.adchk-bt {
+                            >div {
+                                width: 40px;
+                                height: 40px;
+                                font-size: 20px;
+                                line-height: 40px;
+                                border: 1px solid transparent;
+                                color: #a3a3a350;
+                                text-align: center;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 80px;
+                                background-color: #ffffff;
+                                cursor: pointer;
+                                box-shadow: 1px 1px 10px #22222228;
+                            }
 
+                            >.ad-prev {
+                                padding-right: 4px;
+                            }
+
+                            >.ad-next {
+                                right: -25px;
+                                padding-left: 5px;
+                            }
+
+                            >div:hover {
+                                background-color: #a3a3a3;
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        >.ad_hidden {
+                            width: 860px;
+                            height: 320px;
+                            overflow: hidden;
+
+                            >ul {
+                                width: 140%;
+                                justify-content:start;
+                                margin-left: 40px;
+
+                                >li {
+                                    width: 155px;
+
+                                    >input {
+                                        position: relative;
+                                        top: 17px;
+                                        left: -20px;
+                                    }
+
+                                    >.se-img {
+                                        >a {
+
+                                            width: 120px;
+                                            height: 150px;
+                                        border:1px solid #eee;;
+                                            align-items: center;
+
+                                            >img {
+                                                width: 118px;
+                                                height: 150px;
+                                            }
+                                        }
+                                        >h4 {
+                                            font-weight: lighter;
+                                            height: 50px;
+                                            width: 123px;
+                                            margin-top: 11px;
+                                            font-size: 15px;
+                                        }
+        
+                                        >p {
+                                            width: 123px;
+                                            font-size: 15px;
+                                            font-family: 'LINESeedKR-Bd';
+                                            text-align: center;
+                                            line-height: 30px;
+                                            margin-top: 18px;
+                                        }
+        
+                                    }
+
+                                
+                                    >span {
+                                        display: inline-block;
+                                        width: 30px;
+                                        font-size: 12px;
+                                        margin-left: 25px;
+                                    }
+
+                                    >.sale {
+                                        color: tomato;
+                                        font-weight: bold;
+                                    }
+
+                                    >.no {
+                                        margin-left: 10px;
+                                    }
+
+                                }
                             }
                         }
                     }
                 }
-            }
 
+            }
         }
-    }
-} 
-#benner{
-    width: 1130px;
-    height: 155px;
-    margin: 0 auto;
-    justify-content: space-between;
-    >.ben1{
-        width: 550px;
-        height: 100px;
-        >img{
-            width: 100%;
-            height: 100%            
-        }
-    }
-    >.ben2{
-        width: 550px;
-        height: 100px;
-        >img{
-            width: 100%;
-            height: 100%            
-        }
-    }
-}
-#event{
-    width: 1130px;
-    height: 215px;
-    margin: 0 auto;
-    padding: 0 0 30px 0;
-    >h3{
-        margin-bottom: 20px;
-    }
-    >.event_box{
-        width: 100%;
-        height: 100px;
+    } 
+    #benner{
+        width: 1130px;
+        height: 155px;
+        margin: 0 auto;
         justify-content: space-between;
-        >.event_img{
-            >img{
-                width: 220px;
-                height: 100px
-            };
-        }
-        >.event_text{
-            width: 870px;
+        >.ben1{
+            width: 550px;
             height: 100px;
-            >h3{
-                margin-top: 5px;
+            >img{
+                width: 100%;
+                height: 100%            
             }
-            >p{
-                line-height: 40px;
-                font-size: 13px;
-            }
-            >span{
-                font-size: 11px;
-                color: #8f8f8f;
+        }
+        >.ben2{
+            width: 550px;
+            height: 100px;
+            >img{
+                width: 100%;
+                height: 100%            
             }
         }
     }
-    >a{
-        display: inline-block;
+    #event{
+        width: 1130px;
+        height: 215px;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+        >h3{
+            margin-bottom: 20px;
+        }
+        >.event_box{
+            width: 100%;
+            height: 100px;
+            justify-content: space-between;
+            >.event_img{
+                >img{
+                    width: 220px;
+                    height: 100px
+                };
+            }
+            >.event_text{
+                width: 870px;
+                height: 100px;
+                >h3{
+                    margin-top: 5px;
+                }
+                >p{
+                    line-height: 40px;
+                    font-size: 13px;
+                }
+                >span{
+                    font-size: 11px;
+                    color: #8f8f8f;
+                }
+            }
+        }
+        >a{
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            font-size: 13px;
+            text-align: right;
+        }
+    } 
+
+    #introduce{
         width: 100%;
-        height: 30px;
-        font-size: 13px;
-        text-align: right;
-    }
-} 
+        height: auto;
+        margin: 0 auto;
 
-#introduce{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+        >.intro-box{
+            width: 100%;
+            background: #dbdbdb31;
 
-    >.intro-box{
-        width: 100%;
-        background: #dbdbdb31;
+                >ul {
+                    width: 1130px;
+                    height: 50px;
+                    margin: 0 auto;
+                
+                    >li {   
+                        width: 200px;
+                        height: 47px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-family: 'LINESeedKR-Bd';
+                        border: 1px solid #eee;
+                        border-bottom: none;
+                        cursor: pointer;   
+                        border: 0.5px solid transparent;      
+                        margin-top: 3px;   
+                        font-size: 14px;    
+                    }
+                    >li:nth-of-type(1){
+                        background-color: white;
+                    
+                    }
+                }
+        }
+    } 
 
-            >ul {
-                width: 1130px;
-                height: 50px;
-                margin: 0 auto;
-              
-                >li {   
-                    width: 200px;
-                    height: 47px;
-                    line-height: 50px;
-                      text-align: center;
+    #aaa{
+        width: 1130px;
+        height: auto;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 50px 0;
+        >.book-in{
+            width: 800px;
+            height: auto;
+            border-top:0.5px solid #eee;
+            position: relative;
+            >.bok-t{
+                width: 100%;
+                height: 300px;
+                padding: 30px 0;
+            }
+            >.bok-i{
+                width: 100%;
+                height: 700px;
+                overflow: hidden;
+                >img{
+                    width: 100%;
+                    height: 7077px;
+                }
+            }
+            >.gradient_box{
+                width: 100%;
+                height: 500px;
+                position: absolute;
+                bottom: -10px;
+                z-index: 5;
+                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 47%, rgba(255,255,255,1) 100%);
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+          
+                >button{
+                    width: 500px;
+                    height: 60px;
+                    border-radius: 30px;
+                    background-color: rgba(37, 20, 68, 0.849);
+                    color: #eee;
+                    font-size: 18px;
                     font-family: 'LINESeedKR-Bd';
+                    border: 0.5px solid transparent;
+                    &:hover{
+                        cursor: pointer;
+                       
+                    }
+                }
+                >button:nth-of-type(2){
+                    display: none;
+                    position: absolute;
+                }
+                
+
+            }
+        }
+        >.book-buy-in{
+            width: 300px;
+            height: 447px;
+            border: 0.5px solid #eee;
+            position: sticky;
+            top: 2800;
+            >.book-buy_li{
+                width: 300px;
+                height: 290px;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                >.book-buy1{
+                    padding: 30px;
+                    >img{
+                        display: inline-block;
+                        width: 150px;
+                        height: 100px;
+                    
+                    }
+                    >h5{
+                        padding: 10px 0 0 10px;
+                    }
+                }
+                >.nub_count{
+                    width: 135px;
+                    height: 33px;
+                    position: absolute;
+                    top: 100px;
+                    left: 135px;
+                    >input{
+                        width: 55px;
+                        height: 32px;
+                        border: 1px solid #eee;
+                        text-align: center;
+                        position: absolute;
+                        left: 118px;
+
+                    }
+                    >button {
+                        border: none;
+                        position: absolute;
+    
+                    }
+    
+    
+    
+                    .ma2 {
+                        background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_minus.png') no-repeat 2px 0px;
+                        background-size: 32px;
+                        width: 33px;
+                        height: 33px;
+                        position: absolute;
+                       
+    
+                    }
+                    .pl2 {
+                        background: #FFFFFF url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_plus.png') no-repeat -1px 0;
+                        background-size: 32px;
+                        width: 33px;
+                        height: 33px;
+                        position: absolute;
+                        right: 0;
+    
+    
+                    }
+                    >input {
+                        width: 69px;
+                        height: 32px;
+                        border: 1px solid #eee;
+                        text-align: center;
+                        position: absolute;
+                        left: 33px;
+                        &:focus {
+                            outline: none;
+                        }
+    
+                    }
+                }
+                >select{
+                    width: 250px;
+                    height: 30px;
+                }
+                >.sum{
+                    width: auto;
+                    height: 40px;
+                   
+                    margin: 30px 10px;
+                    font-size: 20px;
+                    font-family: 'LINESeedKR-Bd';
+                    &::before{
+                        content: "합계";
+                        width: 155px;
+                        height: 40px;
+                        display: inline-block;
+                        line-height: 40px;
+                        font-size: 18px;    
+                        font-family: 'LINESeedKR-Bd';
+                    
+                    }
+                }
+
+            }
+            >.bac-btn{
+                width: 90%;
+                height: 150px;
+                border-top: 0.5px solid #eee;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+                >button {
+                    width: 100%;
+                    height:50px;
                     border: 1px solid #eee;
-                    border-bottom: none;
-                    cursor: pointer;   
-                    border: 0.5px solid transparent;      
-                    margin-top: 3px;   
-                    font-size: 14px;    
+                    background-color: transparent;
+                    font-size: 17px;
+                    font-family: 'LINESeedKR-Bd';
+                    color: #222222;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                } 
+                .buy {
+                    background-color: rgba(37, 20, 68, 0.849);
+                    color: #eee;
+                    box-shadow: 1px 1px 10px #2222225e;
+                    border: 0.5px solid transparent;
+                } 
+            } 
+            >ul{
+                width: 300px;
+                height: auto;
+                >li{
+                    width: 100%;
+                    height: 50px;
+                    border: 0.5px solid #eee;
+                    border-radius: 5px;
+                    margin: 10px 0;
+                    padding-left: 70px;
+                    line-height: 50px;
+                        
+                    >a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        font-family: 'LINESeedKR-Bd';
+                        font-size: 13px;
+                    
+                    }
+                    
+                    
+                }
+                >li:hover{
+                    border: 0.5px solid #222222;
                 }
                 >li:nth-of-type(1){
-                    background-color: white;
-                  
+                    background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/book.png) no-repeat 24px 15px
                 }
+                >li:nth-of-type(2){
+                    background:#ffffff url(	https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/info.png) no-repeat 24px 15px
+                }
+                 >li:nth-of-type(3){
+                background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/book_split.png) no-repeat 24px 15px
+               }
+               >li:nth-of-type(4){
+                background:#ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/delivery.png) no-repeat 24px 15px
+               }
+               
             }
-     }
-} 
-
-#introduce-box{
-    width: 1130px;
-    height: 1000px;
-    >.book-in{
-        width: 500px;
-        height: 500px;
-        background-color: red;
+        }
     }
-
 } 

@@ -439,6 +439,7 @@ $('.next_r').on('click', function () {
 let price_sum = 17550;
 
 $('.price_sum').append(price_sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+$('.sum').append(price_sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
 
 // 총 상품금액
 
@@ -463,6 +464,32 @@ $(function () {
         }
         $('.co-v').val(parseInt($('.co-v').val()) - 1);
         let sum = parseInt($('.co-v').val() * price_sum);
+        $('.sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+    });
+});
+
+// 
+$(function () {
+    $('.pl2').click(function () {
+        if ($('.b-c').val() > 999) {
+            alert("1000권 초과 구매가 불가능합니다.");
+            $('.b-c').val(1000);
+        } else {
+            $('.b-c').val(parseInt($(".b-c").val()) + 1);
+            let sum = parseInt($(".b-c").val() * price_sum);
+            $('.sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+        }
+
+    });
+
+
+    $('.ma2').click(function () {
+        if ($('.b-c').val() < 2) {
+            alert('1권 이상 구매가 가능합니다.');
+            $('.b-c').val(2);
+        }
+        $('.b-c').val(parseInt($('.b-c').val()) - 1);
+        let sum = parseInt($('.b-c').val() * price_sum);
         $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
     });
 });
@@ -524,13 +551,13 @@ $('.ad-next').on('click', function () {
 // adon
 
 $('.buy_box>ul>li').click(function () {
-    let i=$(this).index();
+    let i = $(this).index();
     let li = $(this).index();
     $(this).toggleClass('active').siblings().removeClass('active');
-   
-    $(this).closest('ul').siblings('.buy-all').find('.buy_kind').eq(i).addClass('dp').siblings().removeClass('dp').css('opacity','0');
+
+    $(this).closest('ul').siblings('.buy-all').find('.buy_kind').eq(i).addClass('dp').siblings().removeClass('dp').css('opacity', '0');
     console.log(i)
-  
+
 
 });
 
@@ -579,3 +606,63 @@ $.ajax({
         }
 
     });
+
+// book-buy1
+
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: { query: "나침판" },
+    async: false,
+    headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
+})
+    .done(function (msg) {
+        console.log(msg)
+
+        $('.book-buy1').prepend("<img src='" + msg.documents[0].thumbnail + "'/>");
+
+        let tit = msg.documents[0].title;
+        let tit2 = tit.substring(0, 29);
+        $('.book-buy1').append("<h5>" + tit2 + "</h5>");
+
+    });
+
+
+
+// book-in
+
+
+$.ajax({
+    method: "GET",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
+    data: { query: "나침판" },
+    async: false,
+    headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
+})
+    .done(function (msg) {
+        console.log(msg)
+
+        $('.bok-t').prepend("<h4>책 소개</h4>");
+        
+        
+        let cnt=msg.documents[0].contents
+        let cnt2=cnt.substring(0,1600)
+       
+        $('.bok-t').append('<p>'+cnt2+'</p>')
+
+
+
+    });
+
+
+ 
+    window.addEventListener('scroll',function(){ 
+let value=window.scrollY
+console.log('scrollY' ,value)
+    });
+
+
+$('.bok-b').click(function(){
+    $('.bok-i').css('height','7145px').css('overflow','visible');
+    $(this).css('display','none').siblings('.bok-b2').css('display','block').parents().css('background','transparent');
+});
