@@ -3,7 +3,9 @@
 .flex_ {
     display: flex;
 }
-
+button:hover{
+    cursor: pointer;
+}
 @mixin border {
     border: 1px solid #eee;
 }
@@ -1260,55 +1262,370 @@
         margin: 0 auto;
         padding: 50px 0;
         >.book-in{
-            width: 800px;
-            height: auto;
-            border-top:0.5px solid #eee;
-            position: relative;
-            >.bok-t{
-                width: 100%;
-                height: 300px;
-                padding: 30px 0;
+            >.book-in1 {
+                    width: 800px;
+                    height: auto;
+                    border-top: 0.5px solid #eee;
+                    position: relative;
+            
+                    >.bok-t {
+                        width: 100%;
+                        height: 380px;
+                        padding: 30px 0;
+            
+                        >h4 {
+                            margin: 0 0 20px 0;
+                        }
+            
+                        >ul {
+                            width: 100%;
+                            height: 380px;
+                            margin-top: 50px;
+            
+                            >li {
+                                line-height: 30px;
+                            }
+                        }
+                    }
+            
+                    >.bok-i {
+                        width: 100%;
+                        height: 750px;
+                        overflow: hidden;
+            
+                        >img {
+                            width: 100%;
+                            height: 7077px;
+                            margin-bottom: 50px;
+                        }
+            
+                        >.wri-int {
+                            width: 93%;
+                            height: 320px;
+                            border-top: 0.5px solid #eee;
+                            margin: 0 auto;
+                            padding-top: 30px;
+            
+                            >div {
+                                width: 100%;
+                                height: 30px;
+                                justify-content: space-between;
+                                margin-bottom: 20px;
+            
+                                >button {
+                                    width: 98px;
+                                    background-color: transparent;
+                                    border: 0.5px solid #eee;
+                                    border-radius: 30px;
+                                    font-size: 10px;
+                                }
+                            }
+            
+                            >p {
+                                font-family: 'LINESeedKR-Bd';
+                                margin: 10px 0;
+                                font-size: 13px;
+                                color: #5c5c5c;
+                            }
+            
+                            >ul {
+                                width: 100%;
+                                height: 250px;
+            
+                                >li {
+                                    line-height: 30px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+            
+                        >.p-re {
+                            width: 93%;
+                            height: 400px;
+                            border-top: 0.5px solid #eee;
+                            margin: 0 auto;
+                            padding-top: 25px;
+            
+                            >h3 {
+                                padding-bottom: 30px;
+                            }
+            
+                            >p {
+                                width: 100%;
+                                margin: 5px 0 10px 0;
+                                font-size: 14px;
+                                line-height: 30px;
+                            }
+            
+                            >ul {
+                                width: 97%;
+                                margin: 0 auto;
+                                padding-top: 30px;
+            
+                                >li {
+                                    line-height: 30px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+            
+                        .relevant {
+                            width: 93%;
+                            margin: 0 auto;
+                            border-top: 0.5px solid #eee;
+                            padding-top: 30px;
+            
+                            >h3 {
+                                padding-bottom: 30px;
+                            }
+            
+                            >ul {
+                                width: 50%;
+                                justify-content: space-around;
+                                padding-top: 10px;
+            
+                                >li {
+                                    line-height: 20px;
+                                    font-size: 14px;
+            
+                                }
+                            }
+            
+                            >ul:nth-of-type(2) {
+                                width: 58%;
+            
+                            }
+            
+                            >ul:nth-of-type(3) {
+                                width: 46%;
+            
+                            }
+                        }
+                    }
+            
+                    >.gradient_box {
+                        width: 100%;
+                        height: 500px;
+                        position: absolute;
+                        bottom: -10px;
+                        z-index: 5;
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 47%, rgba(255, 255, 255, 1) 100%);
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: center;
+            
+                        >button {
+                            width: 500px;
+                            height: 60px;
+                            border-radius: 30px;
+                            background-color: rgba(29, 26, 36, 0.849);
+                            color: #eee;
+                            font-size: 18px;
+                            font-family: 'LINESeedKR-Bd';
+                            border: 0.5px solid transparent;
+            
+                            &:hover {
+                                cursor: pointer;
+            
+                            }
+                        }
+            
+                        >button:nth-of-type(2) {
+                            display: none;
+                            position: absolute;
+                        }
+            
+                    }
             }
-            >.bok-i{
+            >.all-re{
                 width: 100%;
-                height: 700px;
-                overflow: hidden;
-                >img{
+                height: auto;
+                margin-top: 155px;
+                position: relative;
+   
+                >.r-tex{
                     width: 100%;
-                    height: 7077px;
-                }
-            }
-            >.gradient_box{
-                width: 100%;
-                height: 500px;
-                position: absolute;
-                bottom: -10px;
-                z-index: 5;
-                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 47%, rgba(255,255,255,1) 100%);
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: center;
+                    height: 215px;
+                    flex-direction: column;
+                    align-items: center;
+
+                    >p{
+                        width: 100%;
+                        line-height: 40px;
+                        font-size: 20px;
+                        text-align: center;
+                  
+                    }
+                    >button{
+                        width: 200px;
+                        height: 50px;
+                        border-radius: 30px;
+                        font-family: 'LINESeedKR-Bd';
+                        border: 0.5px solid transparent;
+                        background-color: rgba(37, 20, 68, 0.849);
+                        color: #eee;
+                        margin: 30px 0;
           
-                >button{
-                    width: 500px;
-                    height: 60px;
-                    border-radius: 30px;
-                    background-color: rgba(37, 20, 68, 0.849);
-                    color: #eee;
-                    font-size: 18px;
-                    font-family: 'LINESeedKR-Bd';
-                    border: 0.5px solid transparent;
-                    &:hover{
-                        cursor: pointer;
-                       
                     }
                 }
-                >button:nth-of-type(2){
-                    display: none;
+                >span{
+                    display: inline-block;
+                    width: 100px;
+                    height: 30px;
                     position: absolute;
+                    line-height: 30px;
+                     right:-34px;
+                    top: 180px;
+                    font-size: 11px;
+                    cursor: pointer;
+                   background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/question.png') no-repeat 43px 9px;
                 }
-                
+                >.hidden_text{
+                    width: 465px;
+                    height: 224px;
+                    border:  0.5px solid #eee;
+                    padding: 20px;
+                    border-radius: 12px;
+                    box-shadow: 1px 1px 5px #eee;
+                    position: absolute;
+                    top: 212px;
+                    right: 0;
+                    background-color: #ffffff;
+                    z-index: 10;
+                    
+                    display: none;
+                    >h4{
+                            margin-bottom: 10px;             
+                    }
+                    >p{
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                    >ul{
+                        font-size: 13px;
+                        margin-top: 10px;
+                        >li{
+                            line-height: 20px;
+                        }
+                    }
+                }
+                >.r-topic{
+                    width: 100%;
+                    height: 100px;
+                    line-height: 100px;
+                    justify-content: space-around;
+                    border-top: 0.5px solid #eee;
+                    border-bottom: 0.5px solid #eee;
+                    >p{
+                        font-size: 19px;
+                        font-weight: lighter;
+                 
+                    }
+                    >select{
+                        width: 100px;
+                        height: 28px;
+                       margin-top: 36px;
+                       border: 0.5px solid #eee;
+                    }
+                    >.star-r{
+                        width: 500px;
+                        height: 30px;
+                        justify-content: flex-end;
+                        >p{
+                            width: 20px;
+                            font-size: 20px;
+                        }
+                        >p:nth-of-type(1){
+                           font-weight: bolder;
+                        }
+                        >.star_img{
+                            width: 133px;
+                            height: 30px;
+                            margin-top:36px ;
+                             background:url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/star_b_on.png') no-repeat 0 0;
+                        }
+                    }
 
+                }
+                >.re-lis{
+                    width: 100%;
+                    height: 350px;
+                    border-bottom: 0.5px solid #eee;
+                    position: relative;
+                    >h4{
+                        margin: 50px 0 30px 0;
+
+                    }
+                    >ul{
+                        width: 35%;
+                        justify-content: space-around;
+                        >li{
+                            font-size: 14px;
+                        }
+                        >li:nth-of-type(3){
+                            width: 80px;
+                            height: 20px;
+                            background:url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/star_s_on.png') no-repeat 0 0
+                        }
+                    }
+                    >.r_img_1{
+                        >img{
+                            width: 130px;
+                            height: 145px;
+                            margin: 30px 0;
+                        }
+                    
+                    }
+                    >p{
+                        font-size: 13px;
+                    
+                    }
+                    >button{
+                        width: 120px;
+                        height: 30px;
+                        text-align: center;
+                        background: url('//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/smile.png') no-repeat 16px 8px;
+                        border: 0.5px solid #eee;
+                        border-radius: 30px;
+                        padding-left: 12px;
+                        position: absolute;
+                        right:0;
+                    }
+                }
+                >.re-lis2{
+                    height: 200px;
+                    >p{
+                        margin-top: 50px;
+                    }
+                }
+                .r-page{
+                    width: 100%;
+                    height: 55px;
+                    margin-top: 50px;
+                    >ul{
+                        width: 100%;
+                        height: 30px;
+                        justify-content: center;
+                        >li{
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            border: 0.5px solid #eee;
+                            text-align: center;
+                            font-size: 13px;
+                            &:hover a{
+                                background: #222222;
+                                color: #eee;
+                            }
+                            >a{
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                    }
+                }
             }
         }
         >.book-buy-in{
@@ -1316,7 +1633,7 @@
             height: 447px;
             border: 0.5px solid #eee;
             position: sticky;
-            top: 2800;
+            top: 2800px;
             >.book-buy_li{
                 width: 300px;
                 height: 290px;
@@ -1393,6 +1710,7 @@
                 >select{
                     width: 250px;
                     height: 30px;
+                    border: .5px solid #eee;
                 }
                 >.sum{
                     width: auto;

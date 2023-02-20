@@ -632,37 +632,57 @@ $.ajax({
 // book-in
 
 
-$.ajax({
-    method: "GET",
-    url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query: "나침판" },
-    async: false,
-    headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
-})
-    .done(function (msg) {
-        console.log(msg)
-
-        $('.bok-t').prepend("<h4>책 소개</h4>");
-        
-        
-        let cnt=msg.documents[0].contents
-        let cnt2=cnt.substring(0,1600)
-       
-        $('.bok-t').append('<p>'+cnt2+'</p>')
-
-
-
+$(function(){
+    $.get('./sub.txt/txt1.txt', function(data){
+        $('.bok-t').html(data);
     });
+});
 
 
- 
-    window.addEventListener('scroll',function(){ 
-let value=window.scrollY
-console.log('scrollY' ,value)
+    // wri-int
+
+    $(function(){
+        $.get('./sub.txt/txt2.txt', function(data){
+            $('.wri-int').html(data);
+        });
+    });
+    // p-re
+      // wri-int
+
+      $(function(){
+        $.get('./sub.txt/txt3.txt', function(data){
+            $('.p-re').html(data);
+        });
+    });
+    // relevant
+
+  $(function(){
+        $.get('./sub.txt/txt4.txt', function(data){
+            $('.relevant').html(data);
+        });
     });
 
 
 $('.bok-b').click(function(){
-    $('.bok-i').css('height','7145px').css('overflow','visible');
+    $('.bok-i').css('height','8130px').css('overflow','visible');
     $(this).css('display','none').siblings('.bok-b2').css('display','block').parents().css('background','transparent');
+});
+
+
+$('.bok-b2').click(function(){
+    $('.bok-i').css('height','500px').css('overflow','hidden');
+    $(this).css('display','none').siblings('.bok-b').css('display','block').parents().css('background','linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 47%, rgba(255,255,255,1) 100%)');
+});
+
+
+
+// re-유의사항
+$('.hidden-op').on({
+    mouseenter: function(){
+        $('.hidden_text').css('display','block');
+    },
+    mouseleave: function(){
+        $('.hidden_text').css('display','none');
+    },
+
 });
