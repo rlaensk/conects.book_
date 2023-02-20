@@ -1313,39 +1313,44 @@ button:hover {
   width: 100%;
   height: 100%;
 }
-#wrap #aaa > .book-buy-in {
+#wrap #aaa > .book-buy-in-pa {
+  width: 300px;
+  height: 800px;
+  position: relative;
+}
+#wrap #aaa > .book-buy-in-pa > .book-buy-in {
   width: 300px;
   height: 447px;
   border: 0.5px solid #eee;
   position: sticky;
-  top: 2800px;
+  top: 2856px;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li {
   width: 300px;
   height: 290px;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .book-buy1 {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .book-buy1 {
   padding: 30px;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .book-buy1 > img {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .book-buy1 > img {
   display: inline-block;
   width: 150px;
   height: 100px;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .book-buy1 > h5 {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .book-buy1 > h5 {
   padding: 10px 0 0 10px;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .nub_count {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .nub_count {
   width: 135px;
   height: 33px;
   position: absolute;
   top: 100px;
   left: 135px;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .nub_count > input {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .nub_count > input {
   width: 55px;
   height: 32px;
   border: 1px solid #eee;
@@ -1353,18 +1358,18 @@ button:hover {
   position: absolute;
   left: 118px;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .nub_count > button {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .nub_count > button {
   border: none;
   position: absolute;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .nub_count .ma2 {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .nub_count .ma2 {
   background: #FFFFFF url("//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_minus.png") no-repeat 2px 0px;
   background-size: 32px;
   width: 33px;
   height: 33px;
   position: absolute;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .nub_count .pl2 {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .nub_count .pl2 {
   background: #FFFFFF url("//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/price/btn_plus.png") no-repeat -1px 0;
   background-size: 32px;
   width: 33px;
@@ -1372,7 +1377,7 @@ button:hover {
   position: absolute;
   right: 0;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .nub_count > input {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .nub_count > input {
   width: 69px;
   height: 32px;
   border: 1px solid #eee;
@@ -1380,22 +1385,22 @@ button:hover {
   position: absolute;
   left: 33px;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .nub_count > input:focus {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .nub_count > input:focus {
   outline: none;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > select {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > select {
   width: 250px;
   height: 30px;
   border: 0.5px solid #eee;
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .sum {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .sum {
   width: auto;
   height: 40px;
   margin: 30px 10px;
   font-size: 20px;
   font-family: "LINESeedKR-Bd";
 }
-#wrap #aaa > .book-buy-in > .book-buy_li > .sum::before {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .book-buy_li > .sum::before {
   content: "합계";
   width: 155px;
   height: 40px;
@@ -1404,7 +1409,7 @@ button:hover {
   font-size: 18px;
   font-family: "LINESeedKR-Bd";
 }
-#wrap #aaa > .book-buy-in > .bac-btn {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .bac-btn {
   width: 90%;
   height: 150px;
   border-top: 0.5px solid #eee;
@@ -1412,7 +1417,7 @@ button:hover {
   justify-content: center;
   margin: 0 auto;
 }
-#wrap #aaa > .book-buy-in > .bac-btn > button {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .bac-btn > button {
   width: 100%;
   height: 50px;
   border: 1px solid #eee;
@@ -1421,20 +1426,20 @@ button:hover {
   font-family: "LINESeedKR-Bd";
   color: #222222;
 }
-#wrap #aaa > .book-buy-in > .bac-btn > button:hover {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .bac-btn > button:hover {
   cursor: pointer;
 }
-#wrap #aaa > .book-buy-in > .bac-btn .buy {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > .bac-btn .buy {
   background-color: rgba(37, 20, 68, 0.849);
   color: #eee;
   box-shadow: 1px 1px 10px rgba(34, 34, 34, 0.368627451);
   border: 0.5px solid transparent;
 }
-#wrap #aaa > .book-buy-in > ul {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul {
   width: 300px;
   height: auto;
 }
-#wrap #aaa > .book-buy-in > ul > li {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li {
   width: 100%;
   height: 50px;
   border: 0.5px solid #eee;
@@ -1443,25 +1448,25 @@ button:hover {
   padding-left: 70px;
   line-height: 50px;
 }
-#wrap #aaa > .book-buy-in > ul > li > a {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li > a {
   display: block;
   width: 100%;
   height: 100%;
   font-family: "LINESeedKR-Bd";
   font-size: 13px;
 }
-#wrap #aaa > .book-buy-in > ul > li:hover {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li:hover {
   border: 0.5px solid #222222;
 }
-#wrap #aaa > .book-buy-in > ul > li:nth-of-type(1) {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li:nth-of-type(1) {
   background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/book.png) no-repeat 24px 15px;
 }
-#wrap #aaa > .book-buy-in > ul > li:nth-of-type(2) {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li:nth-of-type(2) {
   background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/info.png) no-repeat 24px 15px;
 }
-#wrap #aaa > .book-buy-in > ul > li:nth-of-type(3) {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li:nth-of-type(3) {
   background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/book_split.png) no-repeat 24px 15px;
 }
-#wrap #aaa > .book-buy-in > ul > li:nth-of-type(4) {
+#wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li:nth-of-type(4) {
   background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/delivery.png) no-repeat 24px 15px;
 }
