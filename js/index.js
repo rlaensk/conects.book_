@@ -692,3 +692,26 @@ window.addEventListener('scroll',function(){
     let value=window.scrollY
   console.log('scrollY' ,value)
 });
+
+
+
+// 원클릭메뉴이동
+
+let nav=$('.one');
+let click_=$('.r-topic');
+
+nav.click(function(){
+
+let offset=click_.offset().top;
+$('html, body').animate({scrollTop:offset},400)
+});
+ 
+
+
+// checkbox-all
+
+// $('.ch_b>input').change(function(){
+//     if($('.ch_b>input').is(':checked')){
+//         $('.adon-ul>input').prop('checked'true);
+//     }
+// });
