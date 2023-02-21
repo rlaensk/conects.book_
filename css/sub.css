@@ -564,6 +564,7 @@ button:hover {
   background: rgba(219, 219, 219, 0.1921568627);
   position: absolute;
   left: 0;
+  overflow: hidden;
 }
 #wrap #buy_list > .buy_box > .buy-all > .buy_kind {
   width: 100%;
@@ -1486,4 +1487,19 @@ button:hover {
 }
 #wrap #aaa > .book-buy-in-pa > .book-buy-in > ul > li:nth-of-type(4) {
   background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/delivery.png) no-repeat 24px 15px;
+}
+#wrap .up_btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border: 0.5px solid transparent;
+  color: #ffffff;
+  border-radius: 50%;
+  line-height: 45px;
+  font-size: 45px;
+  text-align: center;
+  background-color: rgba(37, 20, 68, 0.849);
 }

@@ -203,8 +203,8 @@
                     background-color: rgba(255, 255, 255, 0.4);
 
                     >img {
-                        width: 160px;
-                        height: 220px;
+                        width: 150px;
+                        height: 200px;
                         margin-top: 43px;
                     }
                 }
@@ -326,7 +326,7 @@
                 width: 12%;
                 height: 30px;
                 float: left;
-                border: 1px solid #eee;
+                border: 0.5px solid #eee;
                 line-height: 30px;
                 text-align: center;
                 font-size: 14px;
@@ -415,7 +415,7 @@
             img {
                 width: 195x;
                 height: 250px;
-                border: 1px solid #eee;
+                border: 0.5px solid #eee;
 
             }
 
@@ -541,7 +541,7 @@
             content: "46%";
             background-color: rgba(255, 0, 0, 0.767);
             border-radius: 7px;
-            border: 1px solid transparent;
+            border: 0.5px solid transparent;
             display: inline-block;
             font-size: 11px;
             color: #eee;
@@ -555,7 +555,7 @@
             content: "0%";
             background-color: rgba(255, 0, 0, 0.767);
             border-radius: 7px;
-            border: 1px solid transparent;
+            border: 0.5px solid transparent;
             display: inline-block;
             font-size: 11px;
             color: #eee;
@@ -569,7 +569,7 @@
             content: "38%";
             background-color: rgba(255, 0, 0, 0.767);
             border-radius: 7px;
-            border: 1px solid transparent;
+            border: 0.5px solid transparent;
             display: inline-block;
             font-size: 11px;
             color: #eee;
@@ -583,7 +583,7 @@
             content: "37%";
             background-color: rgba(255, 0, 0, 0.767);
             border-radius: 7px;
-            border: 1px solid transparent;
+            border: 0.5px solid transparent;
             display: inline-block;
             font-size: 11px;
             color: #eee;
@@ -597,7 +597,7 @@
             content: "29%";
             background-color: rgba(255, 0, 0, 0.767);
             border-radius: 7px;
-            border: 1px solid transparent;
+            border: 0.5px solid transparent;
             display: inline-block;
             font-size: 11px;
             color: #eee;
@@ -611,7 +611,7 @@
             content: "0%";
             background-color: rgba(255, 0, 0, 0.767);
             border-radius: 7px;
-            border: 1px solid transparent;
+            border: 0.5px solid transparent;
             display: inline-block;
             font-size: 11px;
             color: #eee;
@@ -625,7 +625,7 @@
             content: "38%";
             background-color: rgba(255, 0, 0, 0.767);
             border-radius: 7px;
-            border: 1px solid transparent;
+            border: 0.5px solid transparent;
             display: inline-block;
             font-size: 11px;
             color: #eee;
@@ -639,15 +639,15 @@
 
 #key_menu {
     width: 100%;
-    height: 62px;
+    height: 115px;
     position: relative;
-    padding: 35px 0;
+    padding: 35px 0 0 0;
     overflow: hidden;
 
     >span:hover {
         background-color: rgba(255, 255, 255, 0.4);
         color: #222;
-        border: 1px silid transparent;
+        border: 0.5px silid transparent;
     }
 
     >span.prev_ {
@@ -658,7 +658,7 @@
         left: 344px;
         top: 50px;
         border-radius: 50%;
-        border: 1px solid #eee;
+        border: 0.5px solid #eee;
         text-align: center;
         color: #eee;
         cursor: pointer;
@@ -675,7 +675,7 @@
         right: 344px;
         top: 50px;
         border-radius: 50%;
-        border: 1px solid #eee;
+        border: 0.5px solid #eee;
         text-align: center;
         color: #eee;
         cursor: pointer;
@@ -735,7 +735,7 @@
                 img {
 
                     width: 100%;
-                    height: 89px;
+                    height: 80px;
                     position: absolute;
                     bottom: 0;
 
@@ -952,23 +952,25 @@
                 width: 25px;
                 height: 25px;
                 border-radius: 50%;
-                border:1px solid lightgray;
+                border:0.5px solid #eee;
                 position: absolute;
                 top:65px;
                 text-align: center;
-                color: lightgray;
+                color: #eee;
                 line-height: 25px;
             }
             >.prev_r{
                 left:-45px;
+                padding-right: 1px;
             }
             >.next_r{
                 right: 15px;
+                padding-left: 5px;
             }
  
  }  
 .r_btn p:hover{
-   background-color: lightgray;
+   background-color: #eee;
    color: #222;
 }
 
@@ -984,8 +986,8 @@
                 height: 100px;
 
                 margin-top: 0;
-                border-bottom: 1px solid lightgrey;
-                border-top: 1px solid lightgrey;
+                border-bottom: 0.5px solid #eee;
+                border-top: 0.5px solid  #eee;
                 align-items: center;
 
                 >li {
@@ -1059,7 +1061,7 @@
                 >img {
                     width: 100%;
                     height: 198px;
-                    border: 1px solid lightgray;
+                    border: 0.5px solid  #eee;
                 }
             }
 

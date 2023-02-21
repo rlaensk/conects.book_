@@ -171,7 +171,7 @@ $('.list2>li').mouseenter(function () {
 $.ajax({
     method: "GET",
     url: "https://dapi.kakao.com/v3/search/book?target=title",
-    data: { query: "행정" },
+    data: { query: "나침판" },
     async: false,
     headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
 })
@@ -194,7 +194,7 @@ $.ajax({
             let tit2 = tit.substring(0, 29);
 
             var str = msg.documents[j].contents;
-            var str2 = str.substring(0, 35);
+            var str2 = str.substring(0, 33);
 
             $(".to1").eq(j).append("<p>" + str2 + "...</p>");
 
@@ -675,13 +675,13 @@ $(function(){
 
 $('.bok-b').click(function(){
     $('.bok-i').css('height','8130px').css('overflow','visible');
-    $(this).css('display','none').siblings('.bok-b2').css('display','block').parents().css('background','transparent');
+    $(this).css('display','none').siblings('.bok-b2').css('display','block').parents('.gradient_box').css('background','transparent');
 });
 
 
 $('.bok-b2').click(function(){
     $('.bok-i').css('height','500px').css('overflow','hidden');
-    $(this).css('display','none').siblings('.bok-b').css('display','block').parents().css('background','linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 47%, rgba(255,255,255,1) 100%)');
+    $(this).css('display','none').siblings('.bok-b').css('display','block').parents('.gradient_box').css('background','linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 47%, rgba(255,255,255,1) 100%)');
 });
 
 
@@ -698,10 +698,6 @@ $('.hidden-op').on({
 });
 
 
-window.addEventListener('scroll',function(){
-    let value=window.scrollY
-  console.log('scrollY' ,value)
-});
 
 
 
@@ -745,21 +741,22 @@ $('#af').click(function(){
     }
 });
 
-
-// sticy js 구현
-const bar = document.getElementById('aaf');
-const tmp = bar.cloneNode(true);
-tmp.style.visibility = 'hidden';
-const rectTop = bar.getBoundingClientRect().top;
-
-window.addEventListener('scroll', () => {
-  if (window.pageYOffset > rectTop) {
-    bar.parentNode.appendChild(tmp);
-    bar.style.position = 'fixed';
-    bar.style.top = 0;
-  } else {
-    bar.parentNode.removeChild(tmp);
-    bar.style.position = 'static';
-    bar.style.top = '';
-  }
-});
+// top 버튼
+$(function() {
+    // 보이기 | 숨기기
+    $(window).scroll(function() {
+       if ($(this).scrollTop() > 2000) { //250 넘으면 버튼이 보여짐니다.
+             $('.up_btn').fadeIn();
+             $('.up_btn').css('left', $('#sidebar').offset().left);  // #sidebar left:0 죄표
+             } else {
+             $('.up_btn').fadeOut();
+       }
+    });
+    // 버튼 클릭시
+    $("#toTop").click(function() {   
+    $('html, body').animate({
+      scrollTop : 0    // 0 까지 animation 이동합니다.
+     }, 400);          // 속도 400
+     return false;
+     });
+   });
