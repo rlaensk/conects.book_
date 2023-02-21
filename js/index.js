@@ -24,6 +24,13 @@ $('.cli').click(function () {
 
 });
 
+
+// benner close
+$('.a-close').click(function(){
+    $(".benner_img").css('display','none');
+});
+
+
 // slider
 
 let search2;
@@ -552,10 +559,13 @@ $('.ad-next').on('click', function () {
 
 $('.buy_box>ul>li').click(function () {
     let i = $(this).index();
-    let li = $(this).index();
+
     $(this).toggleClass('active').siblings().removeClass('active');
 
-    $(this).closest('ul').siblings('.buy-all').find('.buy_kind').eq(i).addClass('dp').siblings().removeClass('dp').css('opacity', '0');
+    $('.buy_kind').eq(i).siblings().css('display','none');
+    $('.buy_kind').eq(i).css('display','flex');
+    $('.buy_kind').eq(i).siblings().css('display','none');
+   
     console.log(i)
 
 
@@ -708,10 +718,48 @@ $('html, body').animate({scrollTop:offset},400)
  
 
 
-// checkbox-all
+// all check
 
-// $('.ch_b>input').change(function(){
-//     if($('.ch_b>input').is(':checked')){
-//         $('.adon-ul>input').prop('checked'true);
-//     }
-// });
+$('.ch_b>input').click(function(){
+    if($('.ch_b>input').is(':checked')){
+        $('.adon-ul>li>input').prop('checked',true);
+    }else{
+        $('.adon-ul>li>input').prop('checked',false);
+    }
+});
+
+
+$('#ac').click(function(){
+    if($('.ch_b>input').is(':checked')){
+        $('.ad-ul2>li>input').prop('checked',true);
+    }else{
+        $('.ad-ul2>li>input').prop('checked',false);
+    }
+});
+
+$('#af').click(function(){
+    if($('.ch_b>input').is(':checked')){
+        $('.se-ul>li>input').prop('checked',true);
+    }else{
+        $('.se-ul>li>input').prop('checked',false);
+    }
+});
+
+
+// sticy js 구현
+const bar = document.getElementById('aaf');
+const tmp = bar.cloneNode(true);
+tmp.style.visibility = 'hidden';
+const rectTop = bar.getBoundingClientRect().top;
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > rectTop) {
+    bar.parentNode.appendChild(tmp);
+    bar.style.position = 'fixed';
+    bar.style.top = 0;
+  } else {
+    bar.parentNode.removeChild(tmp);
+    bar.style.position = 'static';
+    bar.style.top = '';
+  }
+});

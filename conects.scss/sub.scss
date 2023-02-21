@@ -59,7 +59,20 @@ button:hover{
                 width: 85px;
             }
         }
-
+        >.a-close{
+            display: block;
+            width: 30px;
+            height: 30px;
+          
+            float: right;
+            position: absolute;
+            border-radius: 50px;
+            right: 22px;
+            top: 8px;
+            z-index: 3;
+            cursor: pointer;
+        
+        }
         >a {
             display: inline-block;
             width: 100%;
@@ -684,7 +697,7 @@ button:hover{
 
     }
     .dp{
-        opacity: 1!important;
+        display: flex;
     }
 
 
@@ -758,6 +771,7 @@ button:hover{
                             }
 
                             >label {
+                                width: 110px;
                                 font-size: 13px;
                                 margin-left: 10px;
 
@@ -911,7 +925,8 @@ button:hover{
                     position: absolute;
                     top: 0;
                     left: 0;
-                    opacity: 0;
+                    display: none;
+                  
                         
                 }
 
@@ -976,13 +991,14 @@ button:hover{
                         >.ch_b {
                             position: absolute;
                             top: 198px;
-                            left: 10px;
+                            left: 18px;
 
                             >#ad {
                                 margin-left: 10px;
                             }
 
                             >label {
+                                width: 110px;
                                 font-size: 13px;
                                 margin-left: 10px;
 
@@ -1260,11 +1276,13 @@ button:hover{
 
     #aaa{
         width: 1130px;
-        height: auto;
+        height: 100%;
         justify-content: space-between;
         margin: 0 auto;
         padding: 50px 0;
+        position: relative;
         >.book-in{
+            width: 800px;
             >.book-in1 {
                     width: 800px;
                     height: auto;
@@ -1634,13 +1652,16 @@ button:hover{
         >.book-buy-in-pa{
             width: 300px;
             height: 800px;
-            position: relative;
+            position:sticky;
+        
+           
+            top: 0;
+            
             >.book-buy-in{
                 width: 300px;
                 height: 447px;
                 border: 0.5px solid #eee;
-                position: sticky;
-                top: 2856px;
+          
                
                 >.book-buy_li{
                     width: 300px;
