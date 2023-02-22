@@ -872,3 +872,19 @@
   height: 150px;
   margin: 0 auto;
 }
+
+.up_btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border: 0.5px solid transparent;
+  color: #ffffff;
+  border-radius: 50%;
+  line-height: 45px;
+  font-size: 45px;
+  text-align: center;
+  background-color: rgba(37, 20, 68, 0.849);
+}

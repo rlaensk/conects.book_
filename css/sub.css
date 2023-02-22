@@ -1489,7 +1489,7 @@ button:hover {
   background: #ffffff url(https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/renewal/common/icon/delivery.png) no-repeat 24px 15px;
 }
 #wrap .up_btn {
-  display: block;
+  display: none;
   width: 50px;
   height: 50px;
   position: fixed;
