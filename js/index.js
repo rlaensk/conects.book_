@@ -102,7 +102,6 @@ $('.header_m>li').mouseenter(function () {
     console.log(i)
     $('.slider_img').css('z-index', '-1');
     $('.slider_box>div').eq(i).css('opacity', '1').siblings().css('opacity', 0);
-
 });
 
 // form
@@ -149,12 +148,9 @@ $(function () {
 
 
 // all_box
-
 $('.list2>li').mouseenter(function () {
     let i = $(this).index();
-
     $('.slider_img').css('z-index', '10')
-
     $('.slider_img>ul').eq(i).css("opacity", '1').siblings().css("opacity", '0');
 });
 
@@ -302,19 +298,13 @@ $(function () {
 
 
 $(function () {
-
     $('.book_list li').on('click', function () {
-
-
         $('.book_list li').removeClass('action');
         $(this).addClass('action');
-
         $('.books>div').hide();
         let i = $(this).index();
-
         $('.books>div').eq(i).show();
     });
-
 });
 
 
@@ -449,7 +439,6 @@ $('.price_sum').append(price_sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","
 $('.sum').append(price_sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
 
 // 총 상품금액
-
 $(function () {
     $('.pl').click(function () {
         if ($('.co-v').val() > 999) {
@@ -460,10 +449,7 @@ $(function () {
             let sum = parseInt($(".co-v").val() * price_sum);
             $('.price_sum').html(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
         }
-
     });
-
-
     $('.ma').click(function () {
         if ($('.co-v').val() < 2) {
             alert('1권 이상 구매가 가능합니다.');
@@ -678,7 +664,6 @@ $('.bok-b').click(function(){
     $(this).css('display','none').siblings('.bok-b2').css('display','block').parents('.gradient_box').css('background','transparent');
 });
 
-
 $('.bok-b2').click(function(){
     $('.bok-i').css('height','500px').css('overflow','hidden');
     $(this).css('display','none').siblings('.bok-b').css('display','block').parents('.gradient_box').css('background','linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 47%, rgba(255,255,255,1) 100%)');
@@ -715,7 +700,6 @@ $('html, body').animate({scrollTop:offset},400)
 
 
 // all check
-
 $('.ch_b>input').click(function(){
     if($('.ch_b>input').is(':checked')){
         $('.adon-ul>li>input').prop('checked',true);
@@ -723,7 +707,6 @@ $('.ch_b>input').click(function(){
         $('.adon-ul>li>input').prop('checked',false);
     }
 });
-
 
 $('#ac').click(function(){
     if($('.ch_b>input').is(':checked')){
