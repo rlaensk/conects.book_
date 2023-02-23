@@ -2,7 +2,7 @@
 $('.hid').click(function () {
     $(this).find('span').css({ backgroundColor: '#fff', color: '#222' });
 
-    $(this).find('span').css({ backgroundColor: '#182c8d', color: '#eee' });
+    $(this).find('span').css({ backgroundColor: '#182c8d', color: '#eee' }).find('b').css('color','white');
     $(this).siblings().find('span').css({ backgroundColor: '#fff', color: '#222' });
 
     $('.none').stop().slideUp();
@@ -728,7 +728,7 @@ $('#af').click(function(){
 $(function() {
     // 보이기 | 숨기기
     $(window).scroll(function() {
-       if ($(this).scrollTop() > 2000) { //250 넘으면 버튼이 보여짐니다.
+       if ($(this).scrollTop() > 2000) {
              $('.up_btn').fadeIn();
              $('.up_btn').css('left', $('#sidebar').offset().left);  // #sidebar left:0 죄표
              } else {
@@ -736,10 +736,35 @@ $(function() {
        }
     });
     // 버튼 클릭시
-    $("#toTop").click(function() {   
+    $('.up_btn').click(function() {   
     $('html, body').animate({
       scrollTop : 0    // 0 까지 animation 이동합니다.
      }, 400);          // 속도 400
      return false;
      });
    });
+
+
+
+   let num_conut=$('.hm_2 ul>.al').length;
+   let num_conut2=$('.hm_3 div ul>li').length;
+   let num_conut3=$('.hm_4 div ul>li').length;
+   let num_conut4=$('#hidden_nav>.hm_5 div ul>li').length;
+   let num_conut5=$('.hm_6 div ul>li').length;
+   let num_conut6=$('.hm_7 div ul>li').length;
+   let num_conut7=$('.hm_8 div ul>li').length;
+
+    $(document).ready(function(){
+    $('.hm_22').append('<b> ('+num_conut+')</b>');
+    $('.hm_33').append('<b> ('+num_conut2+')</b>');
+    $('.hm_44').append('<b> ('+num_conut3+')</b>');
+    $('.hm_55').append('<b> ('+num_conut4+')</b>');
+    $('.hm_66').append('<b> ('+num_conut5+')</b>');
+    $('.hm_77').append('<b> ('+num_conut6+')</b>');
+    $('.hm_88').append('<b> ('+num_conut7+')</b>');
+   
+
+
+});
+
+

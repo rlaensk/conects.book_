@@ -120,6 +120,9 @@ li {
   cursor: pointer;
   font-weight: bold;
 }
+#hidden_nav > div span > b {
+  font-weight: lighter;
+}
 #hidden_nav > div .none {
   display: none;
 }
@@ -471,7 +474,7 @@ li {
   opacity: 0;
 }
 .hidden > .hidden_menu > .all_box > .all {
-  width: 840px;
+  width: 870px;
   height: 450px;
   position: absolute;
   z-index: 10;
@@ -490,7 +493,7 @@ li {
   background-color: #222222;
   color: #eee;
   position: absolute;
-  top: 1px;
+  top: -1px;
   right: -2px;
   line-height: 26px;
   font-size: 33px;
