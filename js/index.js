@@ -154,9 +154,35 @@ $('.list2>li').mouseenter(function () {
     $('.slider_img>ul').eq(i).css("opacity", '1').siblings().css("opacity", '0');
 });
 
+$('.ov').mouseenter(function () {
+
+    let i = $(this).index();
+
+    $('.all_box_slider').css("display", 'flex');
+ 
+    $(this).not('.ov').parents('.all2').siblings('.all_box_slider').css("display", 'none');
+});
 
 
 
+
+$('.prev_box').click(function(){
+
+    $('.slider_infor_box>ul>li:last').prependTo('.slider_infor_box>ul');
+    
+    $('.slider_infor_box>ul').css('margin-left',-820);
+    
+    $('.slider_infor_box>ul').stop().animate({marginLeft:0},800);
+    
+    });
+
+$('.next_box').click(function(){
+    $('.slider_infor_box>ul').stop().animate({marginLeft:-820},800,function(){
+        $('.slider_infor_box>ul>li:first').appendTo('.slider_infor_box>ul');
+        $('.slider_infor_box>ul').css('margin-left','0');
+    });
+
+});
 
 
 
@@ -368,17 +394,9 @@ $.ajax({
 
         for (var j = 0; j < divs.length; j++) {
 
-
-
-
             $('.new').eq(j).append("<img src='" + msg.documents[j].thumbnail + "'/>");
-
-
-            let tit = msg.documents[j].publisher;
+             let tit = msg.documents[j].publisher;
             let tit2 = tit.substring(0, 29);
-
-
-
             $('.new1').eq(j).append("<h3>" + tit2 + "</h3>");
             $('.new1').eq(j).append("<h6>" + msg.documents[j].authors + " | " + msg.documents[j].publisher + "</h6>");
 
