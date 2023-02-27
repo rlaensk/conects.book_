@@ -682,7 +682,22 @@ $('.hidden-op').on({
 
 });
 
+// 공감하기 +1
 
+class LikeCounter{
+    constructor(){
+        const btns=document.querySelectorAll('.good_btn');
+        // const counts=document.querySelectorAll('.count');
+        btns.forEach((btn, count)=>{
+            btn.addEventListener('click',(e)=>{
+            let clicked=e.target.nextElementSibling.textContent;
+            let clickedCount=Number(clicked)+1;
+            console.log(clickedCount);
+            e.target.nextElementSibling.textContent=clickedCount;
+        })
+    })
+    }
+}
 
 
 
@@ -730,7 +745,6 @@ $(function() {
     $(window).scroll(function() {
        if ($(this).scrollTop() > 2000) {
              $('.up_btn').fadeIn();
-             $('.up_btn').css('left', $('#sidebar').offset().left);  // #sidebar left:0 죄표
              } else {
              $('.up_btn').fadeOut();
        }
