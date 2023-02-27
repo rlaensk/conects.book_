@@ -1299,6 +1299,14 @@ button:hover {
   position: absolute;
   right: 0;
 }
+#wrap #aaa > .book-in > .all-re > .re-lis > span {
+  position: absolute;
+  right: 16px;
+  bottom: 29px;
+}
+#wrap #aaa > .book-in > .all-re > .re-lis > .count2 {
+  bottom: 38px;
+}
 #wrap #aaa > .book-in > .all-re > .re-lis2 {
   height: 200px;
 }

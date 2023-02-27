@@ -683,22 +683,31 @@ $('.hidden-op').on({
 });
 
 // 공감하기 +1
+class LikeCounter {
+    constructor() {
+        // 버튼 클릭 횟수               
 
-class LikeCounter{
-    constructor(){
-        const btns=document.querySelectorAll('.good_btn');
-        // const counts=document.querySelectorAll('.count');
-        btns.forEach((btn, count)=>{
-            btn.addEventListener('click',(e)=>{
-            let clicked=e.target.nextElementSibling.textContent;
-            let clickedCount=Number(clicked)+1;
-            console.log(clickedCount);
-            e.target.nextElementSibling.textContent=clickedCount;
+        const btns = document.querySelectorAll('.good_btn');
+        // const counts = document.querySelectorAll('.count');
+
+        // this.clickedCount = 0;
+
+        // 화살표 함수로 이벤트 리스너 정의
+        btns.forEach((btn, count) => {
+            btn.addEventListener('click', (e) => {
+                // this.clickedCount += 1;
+
+                let clicked =e.target.nextElementSibling.textContent;
+                let clickedCount = Number(clicked)+1;
+                console.log(e.target.children)
+                e.target.nextElementSibling.textContent = clickedCount;
+            });
         })
-    })
+        
     }
 }
 
+new LikeCounter();
 
 
 // 원클릭메뉴이동
