@@ -160,7 +160,10 @@ $('.ov').mouseenter(function () {
 
     $('.all_box_slider').css("display", 'flex');
  
-    $(this).not('.ov').parents('.all2').siblings('.all_box_slider').css("display", 'none');
+ 
+}).mouseleave(function(){
+    $('.all_box_slider').css("display", 'none');
+    $(this).siblings('li').not().find('.all_box_slider').css("display", 'none');
 });
 
 
@@ -276,7 +279,6 @@ $.ajax({
 var search;
 search = ["셀러", "자격증", "경제/경영", "성공", "심리", "문학", "어린이"];
 for (i = 0; i < search.length; i++) {
-
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
@@ -285,18 +287,10 @@ for (i = 0; i < search.length; i++) {
         headers: { Authorization: "KakaoAK 7b2300fc6315bb65035d1a3c7b49b161" }
     })
         .done(function (msg) {
-
             console.log(msg);
-
             // for문 (8개)
             var divs = document.getElementsByClassName('box' + i);
-
-
             for (var j = 0; j < divs.length; j++) {
-
-
-
-
                 $('.box' + i).eq(j).append("<a href=#>" + "<img src='" + msg.documents[j].thumbnail + "'/>" + "</a>");
                 $('.box' + i).eq(j).append("<h6>" + msg.documents[j].publisher + "</h6>");
 
@@ -305,16 +299,8 @@ for (i = 0; i < search.length; i++) {
 
                 $('.box' + i).eq(j).append("<h3>" + tit2 + "</h3>");
                 $('.box' + i).eq(j).append("<h6>" + msg.documents[j].authors + "</h6>");
-
-
-
-
             }
-
-
-
         });
-
 }
 
 $(function () {
@@ -654,22 +640,18 @@ $(function(){
 
 
     // wri-int
-
     $(function(){
         $.get('./sub.txt/txt2.txt', function(data){
             $('.wri-int').html(data);
         });
     });
-    // p-re
-      // wri-int
-
+     // p-re
       $(function(){
         $.get('./sub.txt/txt3.txt', function(data){
             $('.p-re').html(data);
         });
     });
     // relevant
-
   $(function(){
         $.get('./sub.txt/txt4.txt', function(data){
             $('.relevant').html(data);
